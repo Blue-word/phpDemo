@@ -1,0 +1,131 @@
+[ 2018-03-10T16:59:26+08:00 ] 172.19.27.227 117.136.66.142 POST /jraz/api/news/newsCate
+[ log ] 106.15.199.8/jraz/api/news/newsCate [运行时间：0.100332s][吞吐率：9.97req/s] [内存消耗：3,175.03kb] [文件加载：52]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'newsCate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Ant/1.0 (iPhone; iOS 11.2.1; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1, zh-Hant-CN;q=0.9',
+  'content-length' => '6',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ RUN ] app\api\controller\News->newsCate[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000922s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`description` FROM `news_category` WHERE  `cate` = 1 [ RunTime:0.000555s ]
+
+---------------------------------------------------------------
+[ 2018-03-10T16:59:26+08:00 ] 172.19.27.227 117.136.66.142 POST /jraz/api/news/newsList
+[ log ] 106.15.199.8/jraz/api/news/newsList [运行时间：0.038182s][吞吐率：26.19req/s] [内存消耗：3,289.34kb] [文件加载：56]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Ant/1.0 (iPhone; iOS 11.2.1; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1, zh-Hant-CN;q=0.9',
+  'content-length' => '13',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'cate_id' => '1',
+  'p' => '1',
+)
+[ info ] [ RUN ] app\api\controller\News->newsList[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.006543s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`picture`,`source`,`comment` FROM `news` WHERE  `cate` = 1  AND `status` = 1 ORDER BY publish_time desc LIMIT 0,5 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `cate` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000523s ]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+
+---------------------------------------------------------------
+[ 2018-03-10T16:59:26+08:00 ] 172.19.27.227 117.136.66.142 POST /jraz/api/news/rotationList
+[ log ] 106.15.199.8/jraz/api/news/rotationList [运行时间：0.024183s][吞吐率：41.35req/s] [内存消耗：3,181.60kb] [文件加载：52]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'rotationList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Ant/1.0 (iPhone; iOS 11.2.1; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1, zh-Hant-CN;q=0.9',
+  'content-length' => '9',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'cate_id' => '2',
+)
+[ info ] [ RUN ] app\api\controller\News->rotationList[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000751s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001048s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`picture` FROM `news` WHERE  `cate` = 2  AND `status` = 1  AND `is_rotation` = 1 ORDER BY publish_time desc LIMIT 5 [ RunTime:0.000675s ]
+
+---------------------------------------------------------------
+[ 2018-03-10T16:59:27+08:00 ] 172.19.27.227 117.136.66.142 POST /jraz/api/news/weather
+[ log ] 106.15.199.8/jraz/api/news/weather [运行时间：0.197115s][吞吐率：5.07req/s] [内存消耗：2,223.19kb] [文件加载：45]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'weather',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Ant/1.0 (iPhone; iOS 11.2.1; Scale/2.00)',
+  'accept-language' => 'zh-Hans-CN;q=1, zh-Hant-CN;q=0.9',
+  'content-length' => '13',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'city' => 'Canberra',
+)
+[ info ] [ RUN ] app\api\controller\News->weather[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

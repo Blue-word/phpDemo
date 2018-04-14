@@ -1,0 +1,103 @@
+<include file="public/layout"/>
+<body style="background-color: #FFF; overflow: auto;">
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div class="page">
+    <div class="fixed-bar">
+        <div class="item-title">
+            <div class="subject">
+                <h3>基本设置</h3>
+                <h5>网站全局内容基本选项设置</h5>
+            </div>
+            <ul class="tab-base nc-row">
+                <li><a href="{:U('System/index',array('inc_type'=>'news_set'))}" class="current"><span>新闻版块</span></a></li>
+                <li><a href="{:U('System/index',array('inc_type'=>'basic'))}" ><span>基本设置</span></a></li>
+                <li><a href="{:U('System/index',array('inc_type'=>'shopping'))}" ><span>购物流程</span></a></li>
+                <li><a href="{:U('System/index',array('inc_type'=>'sms'))}" ><span>短信设置</span></a></li>
+                <li><a href="{:U('System/index',array('inc_type'=>'smtp'))}" ><span>邮件设置</span></a></li>
+                <li><a href="{:U('System/index',array('inc_type'=>'water'))}" ><span>水2印设置</span></a></li>
+                <li><a href="{:U('System/index',array('inc_type'=>'distribut'))}" ><span>分销设置</span></a></li>
+                <!--<li><a href="{:U('System/index',array('inc_type'=>'wap'))}" ><span>WAP设置</span></a></li>-->
+                <!--<li><a href="{:U('System/index',array('inc_type'=>'extend'))}" ><span>扩展设置</span></a></li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- 操作说明 -->
+    <div class="explanation" id="explanation">
+        <div class="title" id="checkZoom"><i class="fa fa-lightbulb-o"></i>
+            <h4 title="提示相关设置操作时应注意的要点">操作提示</h4>
+            <span id="explanationZoom" title="收起提示"></span> </div>
+        <ul>
+            <li>系统平台全局设置，包括基础设置、购物、短信、邮件、水印和分销等相关模块。</li>
+        </ul>
+    </div>
+    <form method="post" id="handlepost" action="{:U('System/handle')}" enctype="multipart/form-data" name="form1">
+        <div class="ncap-form-default">
+            <dl class="row">
+                <dt class="tit">
+                    <label for="record_no">原创声明</label>
+                </dt>
+                <dd class="opt">
+                    <textarea rows="3" cols="180" name="original_statement" class="input-txt" placeholder="对新闻权限声明为原创文章">{$config.original_statement}</textarea>
+                    <p class="notic">新闻上传需选择，是否为原创文章</p>                  
+                </dd>
+            </dl>
+            <dl class="row">
+                <dt class="tit">
+                    <label for="store_name">转载声明</label>
+                </dt>
+                <dd class="opt">
+                    <textarea rows="3" cols="180" name="reproduit_statement" class="input-txt" placeholder="对新闻权限声明为转载文章">{$config.reproduit_statement}</textarea>
+                    <span id="err_goods_remark" class="err" style="color:#F00; display:none;"></span>
+                    <p class="notic">新闻上传需选择，是否为转载文章</p>                  
+                </dd>
+            </dl>
+            <dl class="row">
+                <dt class="tit">
+                    <label for="hot_keywords_1">新闻搜索词</label>
+                </dt>
+                <dd class="opt">
+                    <input id="hot_keywords_1" name="hot_keywords_1" value="{$config.hot_keywords_1}" class="input-txt" type="text">
+                    <span class="err">如: 头条,财经,时尚</span>
+                    <p class="notic">首页搜索界面显示的热门关键词，导航查询，以英文逗号隔开</p>
+                </dd>
+            </dl>
+            <dl class="row">
+                <dt class="tit">
+                    <label for="hot_keywords_2">论坛搜索词</label>
+                </dt>
+                <dd class="opt">
+                    <input id="hot_keywords_2" name="hot_keywords_2" value="{$config.hot_keywords_2}" class="input-txt" type="text">
+                    <span class="err">如: 租房,交友,求职</span>
+                    <p class="notic">首页搜索界面显示的热门关键词，导航查询，以英文逗号隔开</p>
+                </dd>
+            </dl>
+            <!-- <dl class="row">
+                <dt class="tit">
+                    <label for="search_cate">搜索词所属类别</label>
+                </dt>
+                <dd class="opt">
+                    <input type="radio" id="search_cate" name="search_cate" value="1"  <if condition="$config[search_cate] eq 1"> checked </if> > 新 闻  &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="search_cate" value="10" <if condition="$config[search_cate] eq 10"> checked </if> > 论 坛  &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="search_cate" value="100"<if condition="$config[search_cate] eq 100"> checked </if> > 我 的
+                    <p class="notic">搜索版块分类</p>
+                </dd>
+            </dl> -->
+            <div class="bot">
+                <input type="hidden" name="inc_type" value="{$inc_type}">
+                <a href="JavaScript:void(0);" class="ncap-btn-big ncap-btn-green" onclick="document.form1.submit()">确认提交</a>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="goTop"> <a href="JavaScript:void(0);" id="btntop"><i class="fa fa-angle-up"></i></a><a href="JavaScript:void(0);" id="btnbottom"><i class="fa fa-angle-down"></i></a></div>
+</body>
+<script type="text/javascript">
+    function img_call_back(fileurl_tmp)
+    {
+        $("#store_logo").val(fileurl_tmp);
+        $("#img_a").attr('href', fileurl_tmp);
+        $("#img_i").attr('onmouseover', "layer.tips('<img src="+fileurl_tmp+">',this,{tips: [1, '#fff']});");
+    }
+</script>
+</html>

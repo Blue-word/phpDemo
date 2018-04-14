@@ -1,0 +1,96 @@
+<include file="public/layout" />
+<body style="background-color: #FFF; overflow: auto;"> 
+<div class="page">
+  <div class="fixed-bar">
+    <div class="item-title"><a class="back" href="javascript:history.back();" title="返回列表"><i class="fa fa-arrow-circle-o-left"></i></a>
+      <div class="subject">
+        <h3>专题新闻添加</h3>
+        <h5>专题新闻添加与管理</h5>
+      </div>
+    </div>
+  </div>
+    <form action="{:U('News/topic')}" method="post" class="form-horizontal">
+    <div class="ncap-form-default">
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name"><em>*</em>专题标题</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" placeholder="标题" class="input-txt" name="title" value="{$topic.title}">           
+          <span class="err"></span>
+          <p class="notic"></p>
+        </dd>
+      </dl>
+      <!-- <dl class="row">
+        <dt class="tit">
+          <label for="parent_id">添加新闻</label>
+        </dt>
+        <dd class="opt">
+            <select class="small form-control"  style="width:200px"  tabindex="1" name="pid">
+                <option value="0">新闻ID</option>
+                <volist name="cate_list" id="vo">
+                  <option value="{$vo.id}" <if condition="$cate.pid eq $vo.id">selected</if>>{$vo.name}</option>
+                </volist>                               
+            </select>        
+          <span class="err"></span>
+          <p class="notic">将新闻添加进专题新闻里</p>
+        </dd>
+      </dl> -->         
+      <dl class="row">
+        <dt class="tit">
+          <label>是否显示</label>
+        </dt>
+        <dd class="opt">
+            <div class="onoff">
+              <label for="article_show1" class="cb-enable <if condition="$news[is_topic] eq 1">selected</if>">是</label>
+              <label for="article_show0" class="cb-disable <if condition="$news[is_topic] eq 0">selected</if>">否</label>
+              <input id="article_show1" name="status" value="1" type="radio" <if condition="$news[is_topic] eq 1"> checked="checked"</if>>
+              <input id="article_show0" name="status" value="0" type="radio" <if condition="$news[is_topic] eq 0"> checked="checked"</if>>
+            </div>
+            <p class="notic"></p>
+        </dd>
+      </dl>
+      <dl class="row">
+          <dt class="tit">
+              <label for="store_logo">专题封面</label>
+          </dt>
+          <dd class="opt">
+              <div class="input-file-show">
+                  <span class="show">
+                      <a id="img_a" class="nyroModal" rel="gal" href="{$config.picture}">
+                          <i id="img_i" class="fa fa-picture-o" onmouseover="layer.tips('<img src={$config.picture}>',this,{tips: [1, '#fff']});" onmouseout="layer.closeAll();"></i>
+                      </a>
+                      <!-- <input type="text" name="" value="{$config[picture]}" /> -->
+                  </span>
+                  <span class="type-file-box">
+                      <input type="text" id="picture" name="picture" value="{$config.picture}" class="type-file-text">
+                      <input type="button" name="button" id="button1" value="选择上传..." class="type-file-button">
+                      <input class="type-file-file" onClick="GetUploadify(1,'1','topic_picture','img_call_back')" size="30" hidefocus="true" nc_type="change_site_logo" title="点击前方预览图可查看大图，点击按钮选择文件并提交表单后上传生效">
+                  </span>
+              </div>
+              <span class="err"></span>
+              <p class="notic">专题封面显示，最佳显示尺寸为240*60像素</p>
+          </dd>
+        </dl>
+      <if condition="$act neq detail">
+        <div class="bot"><a href="JavaScript:void(0);" onClick="$('.form-horizontal').submit();" class="ncap-btn-big ncap-btn-green" id="submitBtn">确认提交</a></div>
+      </if>
+    </div>
+            <input type="hidden" name="act" value="{$act}">
+            <input type="hidden" name="topic_id" value="{$cate.id}">    
+  </form>
+</div>
+<script type="text/javascript">
+function img_call_back(fileurl_tmp)
+    {
+        var fileurl_tmp;
+        var fileurl_tmp = "{$web_path}" + fileurl_tmp;
+
+
+        $("#picture").val(fileurl_tmp);
+        $("#img_a").attr('href', fileurl_tmp);
+        $("#img_i").attr('onmouseover', "layer.tips('<img src="+fileurl_tmp+">',this,{tips: [1, '#fff']});");
+    }
+</script>
+</body>
+</html>

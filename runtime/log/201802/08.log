@@ -1,0 +1,918 @@
+[ 2018-02-08T14:36:48+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/index/index.html
+[ log ] 106.15.199.8/jraz/admin/index/index.html [运行时间：0.020365s][吞吐率：49.10req/s] [内存消耗：2,491.38kb] [文件加载：55]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ./application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2018-02-08T14:36:50+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/Admin/login.html
+[ log ] 106.15.199.8/jraz/admin/Admin/login.html [运行时间：0.027035s][吞吐率：36.99req/s] [内存消耗：3,522.71kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin/login.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[/opt/php/jraz/application/admin/common.php:60]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:36:56+08:00 ] 172.19.27.227 121.237.191.244 POST /jraz/admin/Admin/login.html
+[ log ] 106.15.199.8/jraz/admin/Admin/login.html [运行时间：0.038375s][吞吐率：26.06req/s] [内存消耗：3,578.41kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/Admin/login.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '30',
+  'cookie' => 'thinkphp_show_page_trace=0|0; serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[/opt/php/jraz/application/admin/common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000795s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001072s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` INNER JOIN `admin_role` `admin_role` ON `admin`.`role_id`=`admin_role`.`role_id` WHERE  `user_name` = 'admin'  AND `password` = 'd294b6ab3f1fcbe457ba7a6bfc4e3db0' LIMIT 1 [ RunTime:0.000754s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `last_login`=1518071816,`last_ip`='121.237.191.244'  WHERE  (  admin_id = 1 ) [ RunTime:0.004324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_log` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] INSERT INTO `admin_log` (`log_time` , `admin_id` , `log_info` , `log_ip` , `log_url`) VALUES (1518071816 , 1 , '后台登录' , '121.237.191.244' , '/jraz/admin/Admin/login.html') [ RunTime:0.003492s ]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:36:58+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/index/index.html
+[ log ] 106.15.199.8/jraz/admin/index/index.html [运行时间：0.029461s][吞吐率：33.94req/s] [内存消耗：3,579.50kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->index[ /opt/php/jraz/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index/index.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'order_amount',
+  4 => 'admin_info',
+  5 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: order_amount[/opt/php/jraz/application/admin/controller/Index.php:19]
+[ error ] [8]未定义变量: admin_info[/opt/php/jraz/application/admin/controller/Index.php:20]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:36:59+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/Index/welcome
+[ log ] 106.15.199.8/jraz/admin/Index/welcome [运行时间：0.041136s][吞吐率：24.31req/s] [内存消耗：3,422.14kb] [文件加载：64]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=welcome%7CIndex',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ /opt/php/jraz/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index/welcome.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'sys_info',
+  4 => 'count',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: welcome[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: count[/opt/php/jraz/application/admin/controller/Index.php:36]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000859s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT VERSION() as version [ RunTime:0.001347s ]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:00+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/System/index
+[ log ] 106.15.199.8/jraz/admin/System/index [运行时间：0.031566s][吞吐率：31.68req/s] [内存消耗：3,493.03kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\System->index[ /opt/php/jraz/application/admin/controller/System.php ]
+[ info ] [ VIEW ] ./application/admin/view/system/news_set.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'group_list',
+  4 => 'inc_type',
+  5 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[/opt/php/jraz/runtime/temp/972ded7d084a0efa5754f778bb17c7b0.php:191]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[/opt/php/jraz/runtime/temp/972ded7d084a0efa5754f778bb17c7b0.php:192]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[/opt/php/jraz/runtime/temp/972ded7d084a0efa5754f778bb17c7b0.php:193]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:00+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/System/index
+[ log ] 106.15.199.8/jraz/admin/System/index [运行时间：0.031987s][吞吐率：31.26req/s] [内存消耗：3,493.03kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\System->index[ /opt/php/jraz/application/admin/controller/System.php ]
+[ info ] [ VIEW ] ./application/admin/view/system/news_set.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'group_list',
+  4 => 'inc_type',
+  5 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[/opt/php/jraz/runtime/temp/972ded7d084a0efa5754f778bb17c7b0.php:191]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[/opt/php/jraz/runtime/temp/972ded7d084a0efa5754f778bb17c7b0.php:192]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[/opt/php/jraz/runtime/temp/972ded7d084a0efa5754f778bb17c7b0.php:193]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:02+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/News/getNews
+[ log ] 106.15.199.8/jraz/admin/News/getNews [运行时间：0.020592s][吞吐率：48.56req/s] [内存消耗：2,642.50kb] [文件加载：58]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'getNews',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=getNews%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->getNews[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ VIEW ] ./application/admin/view/news/getNews.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:131]
+[ error ] [8]未定义变量: news[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:131]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:132]
+[ error ] [8]未定义变量: news[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:132]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:133]
+[ error ] [8]未定义变量: news[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:133]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:134]
+[ error ] [8]未定义变量: news[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:134]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:03+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/News/newsList
+[ log ] 106.15.199.8/jraz/admin/News/newsList [运行时间：0.038520s][吞吐率：25.96req/s] [内存消耗：3,706.44kb] [文件加载：64]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000807s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001109s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 ORDER BY id desc LIMIT 0,7 [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 LIMIT 1 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000511s ]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:06+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/News/newsAdd/act/detail/id/246.html
+[ log ] 106.15.199.8/jraz/admin/News/newsAdd/act/detail/id/246.html [运行时间：0.037767s][吞吐率：26.48req/s] [内存消耗：3,999.39kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/News/newsList',
+  'cookie' => 'thinkphp_show_page_trace=0|0; serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'act' => 'detail',
+  'id' => '246',
+)
+[ info ] [ RUN ] app\admin\controller\News->newsAdd[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/newsAdd.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'id',
+  3 => 'act',
+  4 => 'news',
+  5 => 'cat_select',
+  6 => 'category',
+  7 => 'news_topic',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: cate[/opt/php/jraz/application/admin/controller/News.php:192]
+[ error ] [8]Use of undefined constant statement - assumed 'statement'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:161]
+[ error ] [8]Use of undefined constant statement - assumed 'statement'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:162]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:182]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:183]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:184]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:185]
+[ error ] [8]Use of undefined constant detail - assumed 'detail'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:236]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000813s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001142s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `id` = 246 LIMIT 1 [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_topic` [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT * FROM `news_topic` WHERE  `status` = 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT `cate` FROM `news` WHERE  `id` = 246 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT `c`.*,count(s.id) as has_children FROM `news_category` `c` LEFT JOIN `news_category` `s` ON `s`.`pid`=`c`.`id` GROUP BY c.id ORDER BY pid,sort [ RunTime:0.000662s ]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:10+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/News/newsList.html
+[ log ] 106.15.199.8/jraz/admin/News/newsList.html [运行时间：0.036863s][吞吐率：27.13req/s] [内存消耗：3,706.27kb] [文件加载：64]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/News/newsAdd/act/detail/id/246.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000791s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001166s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 ORDER BY id desc LIMIT 0,7 [ RunTime:0.001190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000486s ]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:14+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/News/newsAdd/act/detail/id/243.html
+[ log ] 106.15.199.8/jraz/admin/News/newsAdd/act/detail/id/243.html [运行时间：0.037130s][吞吐率：26.93req/s] [内存消耗：3,991.73kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/News/newsList.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'act' => 'detail',
+  'id' => '243',
+)
+[ info ] [ RUN ] app\admin\controller\News->newsAdd[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/newsAdd.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'id',
+  3 => 'act',
+  4 => 'news',
+  5 => 'cat_select',
+  6 => 'category',
+  7 => 'news_topic',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: cate[/opt/php/jraz/application/admin/controller/News.php:192]
+[ error ] [8]Use of undefined constant statement - assumed 'statement'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:161]
+[ error ] [8]Use of undefined constant statement - assumed 'statement'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:162]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:182]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:183]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:184]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:185]
+[ error ] [8]Use of undefined constant detail - assumed 'detail'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:236]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000824s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001147s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `id` = 243 LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_topic` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT * FROM `news_topic` WHERE  `status` = 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT `cate` FROM `news` WHERE  `id` = 243 LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT `c`.*,count(s.id) as has_children FROM `news_category` `c` LEFT JOIN `news_category` `s` ON `s`.`pid`=`c`.`id` GROUP BY c.id ORDER BY pid,sort [ RunTime:0.000655s ]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:36+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/News/newsList.html
+[ log ] 106.15.199.8/jraz/admin/News/newsList.html [运行时间：0.036805s][吞吐率：27.17req/s] [内存消耗：3,706.27kb] [文件加载：64]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/News/newsAdd/act/detail/id/243.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000806s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001123s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 ORDER BY id desc LIMIT 0,7 [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 15 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000502s ]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:38+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/news/newsList/p/2.html
+[ log ] 106.15.199.8/jraz/admin/news/newsList/p/2.html [运行时间：0.036863s][吞吐率：27.13req/s] [内存消耗：3,682.70kb] [文件加载：64]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/News/newsList.html',
+  'cookie' => 'serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'p' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000844s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001124s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 ORDER BY id desc LIMIT 7,7 [ RunTime:0.001224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 LIMIT 1 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000483s ]
+
+---------------------------------------------------------------
+[ 2018-02-08T14:37:40+08:00 ] 172.19.27.227 121.237.191.244 GET /jraz/admin/News/newsAdd/act/detail/id/240.html
+[ log ] 106.15.199.8/jraz/admin/News/newsAdd/act/detail/id/240.html [运行时间：0.036955s][吞吐率：27.06req/s] [内存消耗：3,991.70kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:57.0) Gecko/20100101 Firefox/57.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/news/newsList/p/2.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/sxllb/application/api/controller; copyFileName=null; cutFileName=null; memRealUsed=1067; mem-before=1067/3790%20%28MB%29; upNet=5.44; downNet=5.67; vcodesum=17; BatchPaste=2; BatchSelected=null; apacheVersion=; phpVersion=0; backup_path=/www/backup; pnull=1; softType=0; p0=1; rank=a; memSize=3790; BT_PANEL=f491e19a49126b97bdb17c503d8f663976725a93; PHPSESSID=1f6q7e0o2of7fo70ampgiru0q6; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'act' => 'detail',
+  'id' => '240',
+)
+[ info ] [ RUN ] app\admin\controller\News->newsAdd[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/newsAdd.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'id',
+  3 => 'act',
+  4 => 'news',
+  5 => 'cat_select',
+  6 => 'category',
+  7 => 'news_topic',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: cate[/opt/php/jraz/application/admin/controller/News.php:192]
+[ error ] [8]Use of undefined constant statement - assumed 'statement'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:161]
+[ error ] [8]Use of undefined constant statement - assumed 'statement'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:162]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:182]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:183]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:184]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:185]
+[ error ] [8]Use of undefined constant detail - assumed 'detail'[/opt/php/jraz/runtime/temp/6ca1851b6d31a75b297268693e48b229.php:236]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001114s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `id` = 240 LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_topic` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT * FROM `news_topic` WHERE  `status` = 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT `cate` FROM `news` WHERE  `id` = 240 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT `c`.*,count(s.id) as has_children FROM `news_category` `c` LEFT JOIN `news_category` `s` ON `s`.`pid`=`c`.`id` GROUP BY c.id ORDER BY pid,sort [ RunTime:0.000649s ]
+
+---------------------------------------------------------------

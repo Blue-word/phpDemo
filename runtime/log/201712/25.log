@@ -1,0 +1,76 @@
+[ 2017-12-25T11:08:02+08:00 ] 172.19.27.227 180.111.94.81 GET /jraz/admin/index/index.html
+[ log ] 106.15.199.8/jraz/admin/index/index.html [运行时间：0.018963s][吞吐率：52.73req/s] [内存消耗：2,490.89kb] [文件加载：55]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/llb/application; apacheVersion=; phpVersion=0; copyFileName=null; cutFileName=null; memRealUsed=1113; mem-before=1113/3790%20%28MB%29; BatchPaste=1; upNet=0; downNet=0; rank=a; BatchSelected=null; memSize=3790; backup_path=/www/backup; vcodesum=14; BT_PANEL=760030fd7960b1c61e4056b4f6f60f07bb5c845e',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ./application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-25T11:08:04+08:00 ] 172.19.27.227 180.111.94.81 GET /jraz/admin/Admin/login.html
+[ log ] 106.15.199.8/jraz/admin/Admin/login.html [运行时间：0.026489s][吞吐率：37.75req/s] [内存消耗：3,522.45kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'serverType=nginx; order=id%20desc; uploadSize=1073741824; Path=/opt/php/llb/application; apacheVersion=; phpVersion=0; copyFileName=null; cutFileName=null; memRealUsed=1113; mem-before=1113/3790%20%28MB%29; BatchPaste=1; upNet=0; downNet=0; rank=a; BatchSelected=null; memSize=3790; backup_path=/www/backup; vcodesum=14; BT_PANEL=760030fd7960b1c61e4056b4f6f60f07bb5c845e; PHPSESSID=27ur0lb3c7qs93a4o69kbv8sl4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin/login.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[/opt/php/jraz/application/admin/common.php:60]
+
+---------------------------------------------------------------

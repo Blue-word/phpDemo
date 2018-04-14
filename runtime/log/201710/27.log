@@ -1,0 +1,1037 @@
+[ 2017-10-27T13:39:08+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/index.php
+[ log ] 106.15.199.8/jraz/index.php [运行时间：0.019947s][吞吐率：50.13req/s] [内存消耗：2,485.77kb] [文件加载：55]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ./application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-10-27T13:39:16+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/Admin/login.html
+[ log ] 106.15.199.8/jraz/admin/Admin/login.html [运行时间：0.025782s][吞吐率：38.79req/s] [内存消耗：3,521.86kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin/login.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[/opt/php/jraz/application/admin/common.php:60]
+
+---------------------------------------------------------------
+[ 2017-10-27T13:39:19+08:00 ] 172.19.27.227 180.102.126.38 POST /jraz/admin/Admin/login.html
+[ log ] 106.15.199.8/jraz/admin/Admin/login.html [运行时间：0.037153s][吞吐率：26.92req/s] [内存消耗：3,578.07kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '30',
+  'referer' => 'http://106.15.199.8/jraz/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[/opt/php/jraz/application/admin/common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000797s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001059s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` INNER JOIN `admin_role` `admin_role` ON `admin`.`role_id`=`admin_role`.`role_id` WHERE  `user_name` = 'admin'  AND `password` = 'd294b6ab3f1fcbe457ba7a6bfc4e3db0' LIMIT 1 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `last_login`=1509082759,`last_ip`='180.102.126.38'  WHERE  (  admin_id = 1 ) [ RunTime:0.003153s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_log` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] INSERT INTO `admin_log` (`log_time` , `admin_id` , `log_info` , `log_ip` , `log_url`) VALUES (1509082759 , 1 , '后台登录' , '180.102.126.38' , '/jraz/admin/Admin/login.html') [ RunTime:0.002472s ]
+
+---------------------------------------------------------------
+[ 2017-10-27T13:39:21+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/index/index.html
+[ log ] 106.15.199.8/jraz/admin/index/index.html [运行时间：0.029096s][吞吐率：34.37req/s] [内存消耗：3,579.30kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->index[ /opt/php/jraz/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index/index.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'order_amount',
+  4 => 'admin_info',
+  5 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: order_amount[/opt/php/jraz/application/admin/controller/Index.php:19]
+[ error ] [8]未定义变量: admin_info[/opt/php/jraz/application/admin/controller/Index.php:20]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+
+---------------------------------------------------------------
+[ 2017-10-27T13:39:21+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/Index/welcome
+[ log ] 106.15.199.8/jraz/admin/Index/welcome [运行时间：0.027109s][吞吐率：36.89req/s] [内存消耗：3,421.52kb] [文件加载：64]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ /opt/php/jraz/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index/welcome.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'sys_info',
+  4 => 'count',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: welcome[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: count[/opt/php/jraz/application/admin/controller/Index.php:36]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000723s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT VERSION() as version [ RunTime:0.000434s ]
+
+---------------------------------------------------------------
+[ 2017-10-27T13:39:22+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/System/index
+[ log ] 106.15.199.8/jraz/admin/System/index [运行时间：0.025473s][吞吐率：39.26req/s] [内存消耗：3,492.74kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\System->index[ /opt/php/jraz/application/admin/controller/System.php ]
+[ info ] [ VIEW ] ./application/admin/view/system/news_set.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'group_list',
+  4 => 'inc_type',
+  5 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[/opt/php/jraz/runtime/temp/972ded7d084a0efa5754f778bb17c7b0.php:191]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[/opt/php/jraz/runtime/temp/972ded7d084a0efa5754f778bb17c7b0.php:192]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[/opt/php/jraz/runtime/temp/972ded7d084a0efa5754f778bb17c7b0.php:193]
+
+---------------------------------------------------------------
+[ 2017-10-27T13:39:23+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/Admin/index
+[ log ] 106.15.199.8/jraz/admin/Admin/index [运行时间：0.030150s][吞吐率：33.17req/s] [内存消耗：3,585.39kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->index[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin/index.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+[ error ] [8]未定义变量: page[/opt/php/jraz/runtime/temp/6ff8dd09f3cb126a50cfe3343c2ac840.php:240]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000743s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_role` [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT `role_id`,`role_name` FROM `admin_role` [ RunTime:0.000414s ]
+
+---------------------------------------------------------------
+[ 2017-10-27T13:39:24+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/User/userList
+[ log ] 106.15.199.8/jraz/admin/User/userList [运行时间：0.030458s][吞吐率：32.83req/s] [内存消耗：3,545.38kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'userList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=index%7CAdmin',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\User->userList[ /opt/php/jraz/application/admin/controller/User.php ]
+[ info ] [ VIEW ] ./application/admin/view/user/userList.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'list',
+  4 => 'page',
+  5 => 'pager',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: userList[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: where[/opt/php/jraz/application/admin/controller/User.php:12]
+[ error ] [8]未定义变量: where[/opt/php/jraz/application/admin/controller/User.php:24]
+[ error ] [8]未定义变量: category[/opt/php/jraz/runtime/temp/5c24e154cb7e590445a76098df0686e1.php:147]
+[ error ] [8]未定义变量: category[/opt/php/jraz/runtime/temp/5c24e154cb7e590445a76098df0686e1.php:147]
+[ error ] [8]未定义变量: category[/opt/php/jraz/runtime/temp/5c24e154cb7e590445a76098df0686e1.php:147]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000748s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT * FROM `user` LIMIT 0,7 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1 [ RunTime:0.000392s ]
+
+---------------------------------------------------------------
+[ 2017-10-27T13:39:24+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/News/getNews
+[ log ] 106.15.199.8/jraz/admin/News/getNews [运行时间：0.020003s][吞吐率：49.99req/s] [内存消耗：2,642.24kb] [文件加载：58]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'getNews',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=userList%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->getNews[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ VIEW ] ./application/admin/view/news/getNews.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:131]
+[ error ] [8]未定义变量: news[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:131]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:132]
+[ error ] [8]未定义变量: news[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:132]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:133]
+[ error ] [8]未定义变量: news[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:133]
+[ error ] [8]Use of undefined constant url - assumed 'url'[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:134]
+[ error ] [8]未定义变量: news[/opt/php/jraz/runtime/temp/e5c37f4ab8b4b2095af89dbeedd651d4.php:134]
+
+---------------------------------------------------------------
+[ 2017-10-27T13:39:26+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/User/userList
+[ log ] 106.15.199.8/jraz/admin/User/userList [运行时间：0.031066s][吞吐率：32.19req/s] [内存消耗：3,545.26kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'userList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=getNews%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\User->userList[ /opt/php/jraz/application/admin/controller/User.php ]
+[ info ] [ VIEW ] ./application/admin/view/user/userList.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'list',
+  4 => 'page',
+  5 => 'pager',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: userList[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: where[/opt/php/jraz/application/admin/controller/User.php:12]
+[ error ] [8]未定义变量: where[/opt/php/jraz/application/admin/controller/User.php:24]
+[ error ] [8]未定义变量: category[/opt/php/jraz/runtime/temp/5c24e154cb7e590445a76098df0686e1.php:147]
+[ error ] [8]未定义变量: category[/opt/php/jraz/runtime/temp/5c24e154cb7e590445a76098df0686e1.php:147]
+[ error ] [8]未定义变量: category[/opt/php/jraz/runtime/temp/5c24e154cb7e590445a76098df0686e1.php:147]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000734s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT * FROM `user` LIMIT 0,7 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1 [ RunTime:0.000440s ]
+
+---------------------------------------------------------------
+[ 2017-10-27T16:32:03+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/Admin/logout.html
+[ log ] 106.15.199.8/jraz/admin/Admin/logout.html [运行时间：0.027212s][吞吐率：36.75req/s] [内存消耗：3,530.36kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=userList%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->logout[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: logout[/opt/php/jraz/application/admin/common.php:60]
+
+---------------------------------------------------------------
+[ 2017-10-27T16:32:05+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/Admin/Admin/login.html
+[ log ] 106.15.199.8/jraz/Admin/Admin/login.html [运行时间：0.026889s][吞吐率：37.19req/s] [内存消耗：3,521.95kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/Admin/logout.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=userList%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin/login.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[/opt/php/jraz/application/admin/common.php:60]
+
+---------------------------------------------------------------
+[ 2017-10-27T16:53:47+08:00 ] 172.19.27.227 180.102.126.38 POST /jraz/admin/Admin/login.html
+[ log ] 106.15.199.8/jraz/admin/Admin/login.html [运行时间：0.024700s][吞吐率：40.49req/s] [内存消耗：3,453.02kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '19',
+  'referer' => 'http://106.15.199.8/jraz/Admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=userList%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'username' => '',
+  'password' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[/opt/php/jraz/application/admin/common.php:60]
+
+---------------------------------------------------------------
+[ 2017-10-27T17:25:14+08:00 ] 172.19.27.227 180.102.126.38 POST /jraz/admin/Admin/login.html
+[ log ] 106.15.199.8/jraz/admin/Admin/login.html [运行时间：0.038686s][吞吐率：25.85req/s] [内存消耗：3,577.88kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '30',
+  'referer' => 'http://106.15.199.8/jraz/Admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=userList%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[/opt/php/jraz/application/admin/common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000733s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` INNER JOIN `admin_role` `admin_role` ON `admin`.`role_id`=`admin_role`.`role_id` WHERE  `user_name` = 'admin'  AND `password` = 'd294b6ab3f1fcbe457ba7a6bfc4e3db0' LIMIT 1 [ RunTime:0.000702s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `last_login`=1509096314,`last_ip`='180.102.126.38'  WHERE  (  admin_id = 1 ) [ RunTime:0.004366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_log` [ RunTime:0.000788s ]
+[ sql ] [ SQL ] INSERT INTO `admin_log` (`log_time` , `admin_id` , `log_info` , `log_ip` , `log_url`) VALUES (1509096314 , 1 , '后台登录' , '180.102.126.38' , '/jraz/admin/Admin/login.html') [ RunTime:0.003261s ]
+
+---------------------------------------------------------------
+[ 2017-10-27T17:25:16+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/index/index.html
+[ log ] 106.15.199.8/jraz/admin/index/index.html [运行时间：0.030119s][吞吐率：33.20req/s] [内存消耗：3,578.91kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=userList%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->index[ /opt/php/jraz/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index/index.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'order_amount',
+  4 => 'admin_info',
+  5 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: order_amount[/opt/php/jraz/application/admin/controller/Index.php:19]
+[ error ] [8]未定义变量: admin_info[/opt/php/jraz/application/admin/controller/Index.php:20]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[/opt/php/jraz/runtime/temp/f3b8cd80a08a7d48ddff9d313c2498fd.php:192]
+
+---------------------------------------------------------------
+[ 2017-10-27T17:25:16+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/User/userList
+[ log ] 106.15.199.8/jraz/admin/User/userList [运行时间：0.029160s][吞吐率：34.29req/s] [内存消耗：3,545.08kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'userList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=userList%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\User->userList[ /opt/php/jraz/application/admin/controller/User.php ]
+[ info ] [ VIEW ] ./application/admin/view/user/userList.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'list',
+  4 => 'page',
+  5 => 'pager',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: userList[/opt/php/jraz/application/admin/common.php:60]
+[ error ] [8]未定义变量: where[/opt/php/jraz/application/admin/controller/User.php:12]
+[ error ] [8]未定义变量: where[/opt/php/jraz/application/admin/controller/User.php:24]
+[ error ] [8]未定义变量: category[/opt/php/jraz/runtime/temp/5c24e154cb7e590445a76098df0686e1.php:147]
+[ error ] [8]未定义变量: category[/opt/php/jraz/runtime/temp/5c24e154cb7e590445a76098df0686e1.php:147]
+[ error ] [8]未定义变量: category[/opt/php/jraz/runtime/temp/5c24e154cb7e590445a76098df0686e1.php:147]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000754s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SELECT * FROM `user` LIMIT 0,7 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1 [ RunTime:0.000414s ]
+
+---------------------------------------------------------------
+[ 2017-10-27T17:25:18+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/admin/Admin/logout.html
+[ log ] 106.15.199.8/jraz/admin/Admin/logout.html [运行时间：0.025879s][吞吐率：38.64req/s] [内存消耗：3,530.31kb] [文件加载：66]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'logout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=userList%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->logout[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/public/dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: logout[/opt/php/jraz/application/admin/common.php:60]
+
+---------------------------------------------------------------
+[ 2017-10-27T17:25:19+08:00 ] 172.19.27.227 180.102.126.38 GET /jraz/Admin/Admin/login.html
+[ log ] 106.15.199.8/jraz/Admin/Admin/login.html [运行时间：0.026788s][吞吐率：37.33req/s] [内存消耗：3,522.04kb] [文件加载：65]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://106.15.199.8/jraz/admin/Admin/logout.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=774lp2a6oc11agc83kuus870d6; workspaceParam=userList%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ /opt/php/jraz/application/admin/controller/Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin/login.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[/opt/php/jraz/application/admin/common.php:60]
+
+---------------------------------------------------------------

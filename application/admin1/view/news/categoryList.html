@@ -1,0 +1,199 @@
+<include file="public/layout" />
+  
+<body style="background-color: rgb(255, 255, 255); overflow: auto; cursor: default;">
+<div class="page">
+  <div class="fixed-bar">
+    <div class="item-title">
+      <div class="subject">
+        <h3>新闻分类</h3>
+        <h5>新闻分类添加与管理</h5>
+      </div>
+    </div>
+  </div>
+  <div class="explanation" id="explanation">
+    <div class="title" id="checkZoom"><i class="fa fa-lightbulb-o"></i>
+      <h4 title="提示相关设置操作时应注意的要点">操作提示</h4>
+      <span id="explanationZoom" title="收起提示"></span>
+    </div>
+    <ul>
+      <li>新增新闻时，可选择新闻分类。新闻分类将在前台新闻列表页显示</li>
+      <li>系统新闻分类不可以删除</li>
+    </ul>
+  </div>
+    <div class="flexigrid">
+      <div class="flexigrid">
+        <div class="mDiv">
+        <div class="ftitle">
+          <h3>分类列表</h3>
+          <h5>(共{$pager->totalRows}条记录)</h5>
+        </div>
+        <div title="刷新数据" class="pReload"><i class="fa fa-refresh"></i></div>
+      <form class="navbar-form form-inline" action="{:U('News/categoryList')}" method="post">      
+        <div class="sDiv">
+          <div class="sDiv2">
+            <select  name="cate_id" class="select">
+              <option value="">选择搜索类别</option>
+              <option value="1">一级分类</option>
+              <option value="2">二级分类</option>         
+            </select>
+            <input type="text" size="30" name="keywords" class="qsbox" placeholder="搜索相关数据...">
+            <input type="submit" class="btn" value="搜索">
+          </div>
+        </div>
+       </form>
+      </div>
+      <div class="hDiv">
+        <div class="hDivBox">
+        <table cellspacing="0" cellpadding="0">
+          <thead>
+            <tr>
+              <th class="sign" axis="col0">
+                <div style="width: 24px;"><i class="ico-check"></i></div>
+              </th>
+              <th align="left" abbr="article_title" axis="col3" class="">
+                <div style="text-align: left; width: 140px;" class="">名称</div>
+              </th>
+              <th align="center" abbr="ac_id" axis="col4" class="">
+                <div style="text-align: center; width: 140px;" class="">等级分类</div>
+              </th>
+              <th align="center" abbr="article_show" axis="col5" class="">
+                <div style="text-align: center; width: 140px;" class="">父级分类</div>
+              </th>
+              <th align="center" abbr="article_time" axis="col6" class="">
+                <div style="text-align: center; width: 140px;" class="">排序</div>
+              </th>
+              <th align="center" abbr="article_time" axis="col6" class="">
+                <div style="text-align: center; width: 140px;" class="">描述</div>
+              </th>
+              <th align="center" axis="col1" class="handle">
+                <div style="text-align: center; width: 150px;">操作</div>
+              </th>
+              <th style="width:100%" axis="col7">
+                <div></div>
+              </th>
+            </tr>
+          </thead>
+        </table>
+        </div>
+      </div>
+      <div class="tDiv">
+        <div class="tDiv2">
+         <a href="{:U('News/category',array('act'=>'add'))}">
+          <div class="fbutton">
+            <div class="add" title="新增分类">
+              <span><i class="fa fa-plus"></i>新增分类</span>
+            </div>
+          </div>
+         </a> 
+        </div>
+        <div style="clear:both"></div>
+      </div>
+      <div class="bDiv" style="height: auto;">
+      <div id="flexigrid" cellpadding="0" cellspacing="0" border="0">
+        <table>
+          <tbody>
+            <foreach name="list" item="vo" key="k" >
+              <tr>
+                <td class="sign">
+                  <div style="width: 24px;"><i class="ico-check"></i></div>
+                </td>
+                <td align="left" class="">
+                  <div style="text-align: left; width: 140px;">{$vo.name|getSubstr=0,33}</div>
+                </td>
+                <td align="center" class="">
+                  <div style="text-align: center; width: 140px;">{$vo.cate}</div>
+                </td>
+                <td align="center" class="">
+                  <div style="text-align: center; width: 140px;">{$vo.pid_name}</div>
+                </td>
+                <td align="center" class="">
+                  <div style="text-align: center; width: 140px;">{$vo.sort}</div>
+                </td>
+                <td align="center" class="">
+                  <div style="text-align: center; width: 140px;">{$vo.description}</div>
+                </td>
+                <td align="center" class="handle">
+                  <div style="text-align: center; width: 150px; max-width:170px;">
+                  <a class="btn blue"  href="{:U('News/category',array('act'=>'detail','id'=>$vo['id']))}"><i class="fa fa-search"></i>查看</a>
+
+                  <a href="{:U('News/category',array('act'=>'edit','id'=>$vo['id']))}" class="btn blue"><i class="fa fa-pencil-square-o"></i>编辑</a>
+
+                  <a class="btn red"  href="javascript:void(0)" data-url="{:U('News/categoryHandle')}" data-id="{$vo.id}" onClick="delfun(this)"><i class="fa fa-trash-o"></i>删除</a>
+                    
+                  </div>
+                </td>
+                <td align="" class="" style="width: 100%;">
+                  <div>&nbsp;</div>
+                </td>
+              </tr>
+            </foreach>
+          </tbody>
+        </table>
+      </div>
+      <div class="iDiv" style="display: none;"></div>
+    </div>
+    <!-- 分页位置 -->
+    <div>{$pager->show()}</div>
+      
+    </div>
+  </form>
+  <script>
+     $(document).ready(function(){ 
+      // 表格行点击选中切换
+          $('#flexigrid > table>tbody >tr').click(function(){
+            $(this).toggleClass('trSelected');
+        });
+        
+        // 点击刷新数据
+        $('.fa-refresh').click(function(){
+          location.href = location.href;
+        });
+        
+      });
+
+     function delfun(obj) {
+      // 删除按钮
+      layer.confirm('确认删除？', {
+        btn: ['确定', '取消'] //按钮
+      }, function () {
+        $.ajax({
+          type: 'post',
+          url: $(obj).attr('data-url'),
+          data: {act: 'del', id: $(obj).attr('data-id')},
+          dataType: 'json',
+          success: function (data) {
+            if (data==1) {
+              $(obj).parent().parent().parent().remove();
+              layer.closeAll();
+            } else {
+              layer.alert(data, {icon: 2});  //alert('删除失败');
+            }
+          }
+        })
+      }, function () {
+        layer.closeAll();
+      });
+    }
+  
+  // function delfun(obj){
+  //   if(confirm('确认删除')){    
+  //     $.ajax({
+  //       type : 'post',
+  //       url : $(obj).attr('data-url'),
+  //       data : {act:'del',id:$(obj).attr('data-id')},
+  //       dataType : 'json',
+  //       success : function(data){
+  //         if(data==1){
+  //           $(obj).parent().parent().parent().parent().parent().parent().remove();
+  //         }else{
+  //           layer.alert(data, {icon: 2});  //alert(data);
+  //         }
+  //       }
+  //     })
+  //   }
+  //   return false;
+  // }  
+  </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:39:"./application/admin/view/news/test.html";i:1501489354;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge,
+    chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <!-- <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="Description" content=""/>
+    <meta name="keywords" content=""/> -->
+    <title>模板</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+    <!-- <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js">
+    </script> -->
+    <style type="text/css">
+    @media (min-width:320px) and (max-width:568px) {
+    #news-body,#news-content,img{width: 100%;}
+    }
+    </style>
+</head>
+<body>
+<?php echo $list['content']; ?>
+</body>
+</html>
+

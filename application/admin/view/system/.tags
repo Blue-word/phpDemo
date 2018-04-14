@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+add_right	.\edit_right.html	/^	function add_right(){$/;"	f
+adsubmit	.\display.html	/^function adsubmit(){$/;"	f
+adsubmit	.\distribut.html	/^    function adsubmit(){$/;"	f
+adsubmit	.\edit_right.html	/^	function adsubmit(){$/;"	f
+adsubmit	.\goods.html	/^function adsubmit(){$/;"	f
+adsubmit	.\index.html	/^function adsubmit(){$/;"	f
+adsubmit	.\smtp.html	/^    function adsubmit(){$/;"	f
+adsubmit	.\water.html	/^    function adsubmit(){$/;"	f
+call_back	.\menu.html	/^function call_back(msg){$/;"	f
+call_back	.\water.html	/^    function call_back(fileurl_tmp){$/;"	f
+checkForm	.\_navigation.html	/^    function checkForm(){$/;"	f
+check_form	.\smtp.html	/^    function check_form(){$/;"	f
+delfun	.\right_list.html	/^	function delfun(obj) {$/;"	f
+get_act_list	.\edit_right.html	/^	function get_act_list(obj){$/;"	f
+goset	.\display.html	/^function goset(obj){$/;"	f
+goset	.\goods.html	/^function goset(obj){$/;"	f
+img_call_back	.\shop_info.html	/^    function img_call_back(fileurl_tmp)$/;"	f
+sendEmail	.\smtp.html	/^    function sendEmail() {$/;"	f
+setwarter	.\water.html	/^    function setwarter(marktype){$/;"	f

@@ -1,0 +1,44 @@
+<include file="public/layout" />
+<body style="background-color: #FFF; overflow: auto;"> 
+<div class="page">
+  <div class="fixed-bar">
+    <div class="item-title"><a class="back" href="javascript:history.back();" title="返回列表"><i class="fa fa-arrow-circle-o-left"></i></a>
+      <div class="subject">
+        <h3>招聘行业</h3>
+        <h5>招聘行业添加与管理</h5>
+      </div>
+    </div>
+  </div>
+	<form action="{:U('Life/industryHandle')}" method="post" class="form-horizontal">
+    <div class="ncap-form-default">
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name"><em>*</em>行业名称</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" placeholder="名称" class="input-txt" name="name" value="{$info.name}">           
+          <span class="err"></span>
+          <p class="notic"></p>
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label>是否启用</label>
+        </dt>
+        <dd class="opt">
+            <div class="onoff">
+              <label for="article_show1" class="cb-enable <if condition="$info[status] eq 1">selected</if>">是</label>
+              <label for="article_show0" class="cb-disable <if condition="$info[status] eq 0">selected</if>">否</label>
+              <input id="article_show1" name="status" value="1" type="radio" <if condition="$info[status] eq 1"> checked="checked"</if>>
+              <input id="article_show0" name="status" value="0" type="radio" <if condition="$info[status] eq 0"> checked="checked"</if>>
+            </div>
+            <p class="notic"></p>
+        </dd>
+      </dl>
+        <div class="bot"><a href="JavaScript:void(0);" onClick="$('.form-horizontal').submit();" class="ncap-btn-big ncap-btn-green" id="submitBtn">确认提交</a></div>
+      <input type="hidden" name="act" value="{$act}"> 
+      <input type="hidden" name="id" value="{$info.id}">    
+  </form>
+</div>
+</body>
+</html>

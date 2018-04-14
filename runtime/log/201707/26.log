@@ -1,0 +1,1701 @@
+[ 2017-07-26T10:10:38+08:00 ] ::1 ::1 GET /jraz/
+[ log ] localhost/jraz/ [运行时间：0.045632s][吞吐率：21.91req/s] [内存消耗：2,195.48kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ./application/admin/view/public\dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-26T10:10:42+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Admin/login.html
+[ log ] localhost/jraz/index.php/admin/Admin/login.html [运行时间：0.108772s][吞吐率：9.19req/s] [内存消耗：3,106.14kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ C:\wamp\www\jraz\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin\login.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[C:\wamp\www\jraz\application\admin\common.php:60]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:02+08:00 ] ::1 ::1 POST /jraz/index.php/admin/Admin/login.html
+[ log ] localhost/jraz/index.php/admin/Admin/login.html [运行时间：0.326022s][吞吐率：3.07req/s] [内存消耗：3,142.43kb] [文件加载：66]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '30',
+  'referer' => 'http://localhost/jraz/index.php/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ C:\wamp\www\jraz\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/public\dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[C:\wamp\www\jraz\application\admin\common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002186s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.049496s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` INNER JOIN `admin_role` `admin_role` ON `admin`.`role_id`=`admin_role`.`role_id` WHERE  `user_name` = 'admin'  AND `password` = 'd294b6ab3f1fcbe457ba7a6bfc4e3db0' LIMIT 1 [ RunTime:0.024640s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `last_login`=1501035122,`last_ip`='::1'  WHERE  (  admin_id = 1 ) [ RunTime:0.043455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_log` [ RunTime:0.057988s ]
+[ sql ] [ SQL ] INSERT INTO `admin_log` (`log_time` , `admin_id` , `log_info` , `log_ip` , `log_url`) VALUES (1501035122 , 1 , '后台登录' , '0.0.0.0' , '/jraz/index.php/admin/Admin/login.html') [ RunTime:0.050386s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:05+08:00 ] ::1 ::1 GET /jraz/index.php/admin/index/index.html
+[ log ] localhost/jraz/index.php/admin/index/index.html [运行时间：0.071240s][吞吐率：14.04req/s] [内存消耗：3,187.30kb] [文件加载：66]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp\www\jraz\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index\index.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'order_amount',
+  4 => 'admin_info',
+  5 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: order_amount[C:\wamp\www\jraz\application\admin\controller\Index.php:19]
+[ error ] [8]未定义变量: admin_info[C:\wamp\www\jraz\application\admin\controller\Index.php:20]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:06+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Index/welcome
+[ log ] localhost/jraz/index.php/admin/Index/welcome [运行时间：0.068912s][吞吐率：14.51req/s] [内存消耗：3,017.21kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ C:\wamp\www\jraz\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index\welcome.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'sys_info',
+  4 => 'count',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: welcome[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: count[C:\wamp\www\jraz\application\admin\controller\Index.php:36]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000824s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT VERSION() as version [ RunTime:0.000333s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:06+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Index/index.php?act=set_statistical_chart&type=sale&date=week
+[ log ] localhost/jraz/index.php/admin/Index/index.php?act=set_statistical_chart&type=sale&date=week [运行时间：0.059878s][吞吐率：16.70req/s] [内存消耗：2,978.77kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/jraz/index.php/admin/Index/welcome',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=welcome%7CIndex',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'act' => 'set_statistical_chart',
+  'type' => 'sale',
+  'date' => 'week',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: index.php[C:\wamp\www\jraz\application\admin\common.php:60]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:06+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Index/index.php?act=set_statistical_chart&type=order&date=week
+[ log ] localhost/jraz/index.php/admin/Index/index.php?act=set_statistical_chart&type=order&date=week [运行时间：0.082760s][吞吐率：12.08req/s] [内存消耗：2,978.76kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/jraz/index.php/admin/Index/welcome',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=welcome%7CIndex',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'act' => 'set_statistical_chart',
+  'type' => 'order',
+  'date' => 'week',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: index.php[C:\wamp\www\jraz\application\admin\common.php:60]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:29+08:00 ] ::1 ::1 GET /jraz/index.php/admin/System/index
+[ log ] localhost/jraz/index.php/admin/System/index [运行时间：0.134853s][吞吐率：7.42req/s] [内存消耗：3,079.80kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\System->index[ C:\wamp\www\jraz\application\admin\controller\System.php ]
+[ info ] [ VIEW ] ./application/admin/view/system\news_set.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'group_list',
+  4 => 'inc_type',
+  5 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:191]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:192]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:193]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:31+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Forum/carService
+[ log ] localhost/jraz/index.php/admin/Forum/carService [运行时间：0.137565s][吞吐率：7.27req/s] [内存消耗：3,046.66kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Forum',
+    2 => 'carService',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Forum->carService[ C:\wamp\www\jraz\application\admin\controller\Forum.php ]
+[ info ] [ VIEW ] ./application/admin/view/forum\carService.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/forum[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/forum[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: pager[C:\wamp\www\jraz\runtime\temp\1e827b4276787388d963e232080a160a.php:139]
+[ error ] [8]Trying to get property of non-object[C:\wamp\www\jraz\runtime\temp\1e827b4276787388d963e232080a160a.php:139]
+[ error ] [8]未定义变量: list[C:\wamp\www\jraz\runtime\temp\1e827b4276787388d963e232080a160a.php:207]
+[ error ] [8]未定义变量: list[C:\wamp\www\jraz\runtime\temp\1e827b4276787388d963e232080a160a.php:207]
+[ error ] [8]未定义变量: list[C:\wamp\www\jraz\runtime\temp\1e827b4276787388d963e232080a160a.php:207]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:31+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Life/houseRent
+[ log ] localhost/jraz/index.php/admin/Life/houseRent [运行时间：0.128746s][吞吐率：7.77req/s] [内存消耗：3,116.00kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Life',
+    2 => 'houseRent',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=carService%7CForum',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Life->houseRent[ C:\wamp\www\jraz\application\admin\controller\Life.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/life\houseRent.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+  3 => 'page',
+  4 => 'pager',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001018s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `life_house_rent` [ RunTime:0.034106s ]
+[ sql ] [ SQL ] SELECT * FROM `life_house_rent` WHERE  `type` LIKE 0  AND `status` LIKE 0  AND `title` LIKE '%%' LIMIT 0,7 [ RunTime:0.022906s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `life_house_rent` WHERE  `type` LIKE 0  AND `status` LIKE 0  AND `title` LIKE '%%' LIMIT 1 [ RunTime:0.000492s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:32+08:00 ] ::1 ::1 GET /jraz/index.php/admin/News/newsList
+[ log ] localhost/jraz/index.php/admin/News/newsList [运行时间：0.186579s][吞吐率：5.36req/s] [内存消耗：3,161.52kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=houseRent%7CLife',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000856s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.043754s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%' ORDER BY id desc LIMIT 0,7 [ RunTime:0.001206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.036054s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%' LIMIT 1 [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000784s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:34+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Life/houseRent
+[ log ] localhost/jraz/index.php/admin/Life/houseRent [运行时间：0.063624s][吞吐率：15.72req/s] [内存消耗：3,116.05kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Life',
+    2 => 'houseRent',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Life->houseRent[ C:\wamp\www\jraz\application\admin\controller\Life.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/life\houseRent.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+  3 => 'page',
+  4 => 'pager',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000807s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `life_house_rent` [ RunTime:0.004923s ]
+[ sql ] [ SQL ] SELECT * FROM `life_house_rent` WHERE  `type` LIKE 0  AND `status` LIKE 0  AND `title` LIKE '%%' LIMIT 0,7 [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `life_house_rent` WHERE  `type` LIKE 0  AND `status` LIKE 0  AND `title` LIKE '%%' LIMIT 1 [ RunTime:0.000354s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:12:36+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Life/industry
+[ log ] localhost/jraz/index.php/admin/Life/industry [运行时间：0.125595s][吞吐率：7.96req/s] [内存消耗：3,111.93kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Life',
+    2 => 'industry',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=houseRent%7CLife',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Life->industry[ C:\wamp\www\jraz\application\admin\controller\Life.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/life\industry.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+  3 => 'page',
+  4 => 'pager',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000922s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `life_job_industry` [ RunTime:0.066114s ]
+[ sql ] [ SQL ] SELECT * FROM `life_job_industry` WHERE  `status` LIKE 0  AND `name` LIKE '%%' LIMIT 0,7 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `life_job_industry` WHERE  `status` LIKE 0  AND `name` LIKE '%%' LIMIT 1 [ RunTime:0.000462s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:39:50+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Life/industry
+[ log ] localhost/jraz/index.php/admin/Life/industry [运行时间：0.080332s][吞吐率：12.45req/s] [内存消耗：3,111.88kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Life',
+    2 => 'industry',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mydemo/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=industry%7CLife',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Life->industry[ C:\wamp\www\jraz\application\admin\controller\Life.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/life\industry.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+  3 => 'page',
+  4 => 'pager',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001239s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `life_job_industry` [ RunTime:0.007211s ]
+[ sql ] [ SQL ] SELECT * FROM `life_job_industry` WHERE  `status` LIKE 0  AND `name` LIKE '%%' LIMIT 0,7 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `life_job_industry` WHERE  `status` LIKE 0  AND `name` LIKE '%%' LIMIT 1 [ RunTime:0.000467s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T10:39:51+08:00 ] ::1 ::1 GET /jraz/index.php/admin/System/index
+[ log ] localhost/jraz/index.php/admin/System/index [运行时间：0.056864s][吞吐率：17.59req/s] [内存消耗：3,079.77kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mydemo/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\System->index[ C:\wamp\www\jraz\application\admin\controller\System.php ]
+[ info ] [ VIEW ] ./application/admin/view/system\news_set.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'group_list',
+  4 => 'inc_type',
+  5 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:191]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:192]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:193]
+
+---------------------------------------------------------------
+[ 2017-07-26T11:13:15+08:00 ] ::1 ::1 GET /jraz/index.php/admin/System/index
+[ log ] localhost/jraz/index.php/admin/System/index [运行时间：0.066890s][吞吐率：14.95req/s] [内存消耗：3,079.77kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mydemo/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=ciqhuueceb6ase8qsko1idskb4; admin_type=1; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\System->index[ C:\wamp\www\jraz\application\admin\controller\System.php ]
+[ info ] [ VIEW ] ./application/admin/view/system\news_set.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'group_list',
+  4 => 'inc_type',
+  5 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:191]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:192]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:193]
+
+---------------------------------------------------------------
+[ 2017-07-26T13:35:37+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Index/welcome
+[ log ] localhost/jraz/index.php/admin/Index/welcome [运行时间：0.057676s][吞吐率：17.34req/s] [内存消耗：2,195.98kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mydemo/index.php/admin/index/index.html',
+  'cookie' => 'PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ./application/admin/view/public\dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-26T13:35:41+08:00 ] ::1 ::1 GET /jraz/index.php/index.php/admin/Admin/login.html
+[ log ] localhost/jraz/index.php/index.php/admin/Admin/login.html [运行时间：0.068984s][吞吐率：14.50req/s] [内存消耗：1,719.16kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index.php',
+    1 => 'admin',
+    2 => 'Admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/Index/welcome',
+  'cookie' => 'PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=welcome%7CIndex',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-26T13:35:50+08:00 ] ::1 ::1 GET /jraz/index.php/admin/System/index
+[ log ] localhost/jraz/index.php/admin/System/index [运行时间：0.036658s][吞吐率：27.28req/s] [内存消耗：2,206.84kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mydemo/index.php/admin/index/index.html',
+  'cookie' => 'PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ./application/admin/view/public\dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-26T13:35:53+08:00 ] ::1 ::1 GET /jraz/index.php/index.php/admin/Admin/login.html
+[ log ] localhost/jraz/index.php/index.php/admin/Admin/login.html [运行时间：0.052503s][吞吐率：19.05req/s] [内存消耗：1,719.14kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index.php',
+    1 => 'admin',
+    2 => 'Admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/System/index',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-26T13:36:30+08:00 ] ::1 ::1 GET /jraz/index.php/admin/index/index.html
+[ log ] localhost/jraz/index.php/admin/index/index.html [运行时间：0.044065s][吞吐率：22.69req/s] [内存消耗：2,195.84kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ./application/admin/view/public\dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-26T13:36:34+08:00 ] ::1 ::1 GET /jraz/index.php/index.php/admin/Admin/login.html
+[ log ] localhost/jraz/index.php/index.php/admin/Admin/login.html [运行时间：0.035665s][吞吐率：28.04req/s] [内存消耗：1,719.14kb] [文件加载：45]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index.php',
+    1 => 'admin',
+    2 => 'Admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-26T13:36:43+08:00 ] ::1 ::1 GET /jraz/
+[ log ] localhost/jraz/ [运行时间：0.039537s][吞吐率：25.29req/s] [内存消耗：2,195.67kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ./application/admin/view/public\dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-26T13:36:44+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Admin/login.html
+[ log ] localhost/jraz/index.php/admin/Admin/login.html [运行时间：0.047905s][吞吐率：20.87req/s] [内存消耗：3,106.16kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ C:\wamp\www\jraz\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin\login.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[C:\wamp\www\jraz\application\admin\common.php:60]
+
+---------------------------------------------------------------
+[ 2017-07-26T13:36:46+08:00 ] ::1 ::1 POST /jraz/index.php/admin/Admin/login.html
+[ log ] localhost/jraz/index.php/admin/Admin/login.html [运行时间：0.258781s][吞吐率：3.86req/s] [内存消耗：3,142.43kb] [文件加载：66]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '30',
+  'referer' => 'http://localhost/jraz/index.php/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ C:\wamp\www\jraz\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/public\dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[C:\wamp\www\jraz\application\admin\common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001532s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.018960s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` INNER JOIN `admin_role` `admin_role` ON `admin`.`role_id`=`admin_role`.`role_id` WHERE  `user_name` = 'admin'  AND `password` = 'd294b6ab3f1fcbe457ba7a6bfc4e3db0' LIMIT 1 [ RunTime:0.001612s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `last_login`=1501047406,`last_ip`='::1'  WHERE  (  admin_id = 1 ) [ RunTime:0.053864s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_log` [ RunTime:0.043531s ]
+[ sql ] [ SQL ] INSERT INTO `admin_log` (`log_time` , `admin_id` , `log_info` , `log_ip` , `log_url`) VALUES (1501047406 , 1 , '后台登录' , '0.0.0.0' , '/jraz/index.php/admin/Admin/login.html') [ RunTime:0.048696s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T13:36:50+08:00 ] ::1 ::1 GET /jraz/index.php/admin/index/index.html
+[ log ] localhost/jraz/index.php/admin/index/index.html [运行时间：0.065042s][吞吐率：15.37req/s] [内存消耗：3,187.34kb] [文件加载：66]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp\www\jraz\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index\index.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'order_amount',
+  4 => 'admin_info',
+  5 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: order_amount[C:\wamp\www\jraz\application\admin\controller\Index.php:19]
+[ error ] [8]未定义变量: admin_info[C:\wamp\www\jraz\application\admin\controller\Index.php:20]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+
+---------------------------------------------------------------
+[ 2017-07-26T13:36:50+08:00 ] ::1 ::1 GET /jraz/index.php/admin/System/index
+[ log ] localhost/jraz/index.php/admin/System/index [运行时间：0.057985s][吞吐率：17.25req/s] [内存消耗：3,079.79kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\System->index[ C:\wamp\www\jraz\application\admin\controller\System.php ]
+[ info ] [ VIEW ] ./application/admin/view/system\news_set.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'group_list',
+  4 => 'inc_type',
+  5 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:191]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:192]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:193]
+
+---------------------------------------------------------------
+[ 2017-07-26T13:36:56+08:00 ] ::1 ::1 GET /jraz/index.php/admin/news/test.html
+[ log ] localhost/jraz/index.php/admin/news/test.html [运行时间：0.172534s][吞吐率：5.80req/s] [内存消耗：3,018.26kb] [文件加载：62]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->test[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\test.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000912s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.072183s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `id` = 41 LIMIT 1 [ RunTime:0.002132s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T13:36:56+08:00 ] ::1 ::1 GET /jraz/index.php/admin/news/css/main.css
+[ log ] localhost/jraz/index.php/admin/news/css/main.css [运行时间：0.042515s][吞吐率：23.52req/s] [内存消耗：2,223.66kb] [文件加载：58]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/css,*/*;q=0.1',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/news/test.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem; admin_type=1',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+
+---------------------------------------------------------------
+[ 2017-07-26T13:50:51+08:00 ] ::1 ::1 GET /jraz/index.php/admin/System/index
+[ log ] localhost/jraz/index.php/admin/System/index [运行时间：0.069702s][吞吐率：14.35req/s] [内存消耗：3,079.79kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\System->index[ C:\wamp\www\jraz\application\admin\controller\System.php ]
+[ info ] [ VIEW ] ./application/admin/view/system\news_set.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'group_list',
+  4 => 'inc_type',
+  5 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:191]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:192]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:193]
+
+---------------------------------------------------------------
+[ 2017-07-26T13:50:52+08:00 ] ::1 ::1 GET /jraz/index.php/admin/News/newsList
+[ log ] localhost/jraz/index.php/admin/News/newsList [运行时间：0.112063s][吞吐率：8.92req/s] [内存消耗：3,161.45kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=index%7CSystem; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000988s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.006043s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%' ORDER BY id desc LIMIT 0,7 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.039355s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%' LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000422s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T13:50:53+08:00 ] ::1 ::1 GET /jraz/index.php/admin/News/newsAdd/act/add.html
+[ log ] localhost/jraz/index.php/admin/News/newsAdd/act/add.html [运行时间：0.150966s][吞吐率：6.62req/s] [内存消耗：3,464.47kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/News/newsList',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=newsList%7CNews; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'act' => 'add',
+)
+[ info ] [ RUN ] app\admin\controller\News->newsAdd[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\newsAdd.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'act',
+  3 => 'news',
+  4 => 'cat_select',
+  5 => 'category',
+  6 => 'news_topic',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: cat_id[C:\wamp\www\jraz\application\admin\controller\News.php:180]
+[ error ] [8]未定义变量: cate[C:\wamp\www\jraz\application\admin\controller\News.php:185]
+[ error ] [8]Use of undefined constant statement - assumed 'statement'[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:164]
+[ error ] [8]Use of undefined constant statement - assumed 'statement'[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:165]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:185]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:186]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:187]
+[ error ] [8]Use of undefined constant is_topic - assumed 'is_topic'[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:188]
+[ error ] [8]未定义变量: picture[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:227]
+[ error ] [8]未定义变量: picture[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:227]
+[ error ] [8]未定义变量: picture[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:227]
+[ error ] [8]Use of undefined constant detail - assumed 'detail'[C:\wamp\www\jraz\runtime\temp\317a708c9f811f61358049a9630c81cd.php:255]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000996s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.004622s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_topic` [ RunTime:0.035460s ]
+[ sql ] [ SQL ] SELECT * FROM `news_topic` WHERE  `status` = 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.006169s ]
+[ sql ] [ SQL ] SELECT `c`.*,count(s.id) as has_children FROM `news_category` `c` LEFT JOIN `news_category` `s` ON `s`.`pid`=`c`.`id` GROUP BY c.id ORDER BY pid,sort [ RunTime:0.000765s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T14:14:36+08:00 ] ::1 ::1 GET /jraz/index.php/admin/News/newsList
+[ log ] localhost/jraz/index.php/admin/News/newsList [运行时间：0.109454s][吞吐率：9.14req/s] [内存消耗：3,161.47kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mydemo/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=newsList%7CNews; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001021s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.004990s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%' ORDER BY id desc LIMIT 0,7 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.005663s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%' LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000361s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T14:47:38+08:00 ] ::1 ::1 GET /jraz/index.php/admin/News/newsList
+[ log ] localhost/jraz/index.php/admin/News/newsList [运行时间：0.121787s][吞吐率：8.21req/s] [内存消耗：3,161.49kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mydemo/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=newsList%7CNews; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000925s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.005911s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%' ORDER BY id desc LIMIT 0,7 [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.005237s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%' LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000685s ]
+
+---------------------------------------------------------------
+[ 2017-07-26T17:27:32+08:00 ] ::1 ::1 GET /jraz/index.php/admin/News/newsList
+[ log ] localhost/jraz/index.php/admin/News/newsList [运行时间：0.179030s][吞吐率：5.59req/s] [内存消耗：3,161.76kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/mydemo/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=kpqahibifq9t9eu5p6h06a1ir2; workspaceParam=newsList%7CNews; admin_type=1; Hm_lvt_fe310254e5af1a36c2033b8f07f22e08=1501051763; Hm_lpvt_fe310254e5af1a36c2033b8f07f22e08=1501051763',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010122s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.074236s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%' ORDER BY id desc LIMIT 0,7 [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.016352s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 24 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 21 LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%' LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000390s ]
+
+---------------------------------------------------------------

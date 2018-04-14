@@ -1,0 +1,1645 @@
+[ 2017-07-30T14:28:51+08:00 ] ::1 ::1 POST /jraz/index.php/V1/login/login
+[ log ] localhost/jraz/index.php/V1/login/login [运行时间：0.103765s][吞吐率：9.64req/s] [内存消耗：2,794.66kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '28',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'account' => '15895955706',
+  'type' => 'sms',
+)
+[ info ] [ RUN ] app\V1\controller\Login->login[ C:\wamp\www\jraz\application\V1\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001233s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005563s ]
+[ sql ] [ SQL ] SELECT `uid`,`account`,`name`,`sex`,`head_portrait`,`age` FROM `user` WHERE  `account` = '15895955706' LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `token` [ RunTime:0.006164s ]
+[ sql ] [ SQL ] DELETE FROM `token`    WHERE  (  uid=1 ) [ RunTime:0.000938s ]
+[ sql ] [ SQL ] INSERT INTO `token` (`uid` , `token`) VALUES (1 , 'b2341f19479a05f3ecedb13388bc614f') [ RunTime:0.000457s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T14:39:37+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/message
+[ log ] localhost/jraz/index.php/V1/user/message [运行时间：0.053351s][吞吐率：18.74req/s] [内存消耗：2,158.18kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '87',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'content' => '爱时代',
+  'to_id' => '2',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->message[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-30T14:40:06+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/message
+[ log ] localhost/jraz/index.php/V1/user/message [运行时间：0.114407s][吞吐率：8.74req/s] [内存消耗：2,930.99kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '87',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'content' => '爱时代',
+  'to_id' => '2',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->message[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000958s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_message` [ RunTime:0.005234s ]
+[ sql ] [ SQL ] INSERT INTO `user_message` (`from_id` , `to_id` , `content` , `time` , `status`) VALUES (1 , 2 , '爱时代' , 1501396806 , 0) [ RunTime:0.053169s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T14:40:51+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/message
+[ log ] localhost/jraz/index.php/V1/user/message [运行时间：0.157251s][吞吐率：6.36req/s] [内存消耗：2,864.09kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '87',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'content' => '爱时代',
+  'to_id' => '2',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->message[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000815s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_message` [ RunTime:0.006668s ]
+[ sql ] [ SQL ] INSERT INTO `user_message` (`from_id` , `to_id` , `content` , `time` , `status`) VALUES (1 , 2 , '爱时代' , 1501396851 , 0) [ RunTime:0.102797s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T15:03:30+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.118421s][吞吐率：8.44req/s] [内存消耗：2,989.35kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '101',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+  'to_id' => '2',
+  'post_id' => '2',
+  'content' => '爱时代',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: pid[C:\wamp\www\jraz\application\V1\controller\User.php:189]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Le champ 'pid' ne peut être vide (null)[C:\wamp\www\jraz\thinkphp\library\think\db\Connection.php:438]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010469s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.005074s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T15:03:56+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.069724s][吞吐率：14.34req/s] [内存消耗：2,989.43kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '101',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+  'to_id' => '2',
+  'post_id' => '2',
+  'content' => '爱时代',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: pid[C:\wamp\www\jraz\application\V1\controller\User.php:189]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Le champ 'pid' ne peut être vide (null)[C:\wamp\www\jraz\thinkphp\library\think\db\Connection.php:438]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.005020s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T15:05:19+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.081268s][吞吐率：12.30req/s] [内存消耗：2,988.39kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '101',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+  'to_id' => '2',
+  'post_id' => '2',
+  'content' => '爱时代',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: id[C:\wamp\www\jraz\application\V1\controller\User.php:174]
+[ error ] [8]未定义变量: to_id[C:\wamp\www\jraz\application\V1\controller\User.php:183]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Le champ 'uid' ne peut être vide (null)[C:\wamp\www\jraz\thinkphp\library\think\db\Connection.php:438]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010303s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.005189s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T15:05:33+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.048402s][吞吐率：20.66req/s] [内存消耗：2,221.00kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '101',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '',
+  'to_id' => '2',
+  'post_id' => '2',
+  'content' => '爱时代',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: id[C:\wamp\www\jraz\application\V1\controller\User.php:174]
+[ error ] [8]未定义变量: to_id[C:\wamp\www\jraz\application\V1\controller\User.php:183]
+[ error ] [8]未定义变量: res[C:\wamp\www\jraz\application\V1\controller\User.php:189]
+
+---------------------------------------------------------------
+[ 2017-07-30T15:07:59+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.055689s][吞吐率：17.96req/s] [内存消耗：2,220.84kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '115',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '',
+  'belong_uid' => '1',
+  'to_id' => '2',
+  'post_id' => '2',
+  'content' => '爱时代',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: id[C:\wamp\www\jraz\application\V1\controller\User.php:174]
+[ error ] [8]未定义变量: to_id[C:\wamp\www\jraz\application\V1\controller\User.php:183]
+[ error ] [8]未定义变量: res[C:\wamp\www\jraz\application\V1\controller\User.php:189]
+
+---------------------------------------------------------------
+[ 2017-07-30T15:08:15+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.050845s][吞吐率：19.67req/s] [内存消耗：2,220.90kb] [文件加载：57]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '115',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '',
+  'belong_uid' => '1',
+  'to_id' => '2',
+  'post_id' => '2',
+  'content' => '爱时代',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: id[C:\wamp\www\jraz\application\V1\controller\User.php:174]
+[ error ] [8]未定义变量: res[C:\wamp\www\jraz\application\V1\controller\User.php:189]
+
+---------------------------------------------------------------
+[ 2017-07-30T15:10:07+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.157275s][吞吐率：6.36req/s] [内存消耗：2,931.55kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '115',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '',
+  'belong_uid' => '1',
+  'to_id' => '2',
+  'post_id' => '2',
+  'content' => '爱时代',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: id[C:\wamp\www\jraz\application\V1\controller\User.php:174]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001074s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.005101s ]
+[ sql ] [ SQL ] INSERT INTO `user_post_reply` (`post_id` , `content` , `msg_id` , `uid` , `time` , `status` , `pid`) VALUES (2 , '爱时代' , 1 , 1 , 1501398607 , 0 , 0) [ RunTime:0.092830s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T15:12:18+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.161623s][吞吐率：6.19req/s] [内存消耗：2,931.42kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '108',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: id[C:\wamp\www\jraz\application\V1\controller\User.php:174]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000923s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.007276s ]
+[ sql ] [ SQL ] INSERT INTO `user_post_reply` (`post_id` , `content` , `msg_id` , `uid` , `time` , `status` , `pid`) VALUES (2 , '爱时代' , 1 , 2 , 1501398737 , 0 , 0) [ RunTime:0.098946s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T15:12:52+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.171776s][吞吐率：5.82req/s] [内存消耗：2,870.78kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '135',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '1',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000926s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.005272s ]
+[ sql ] [ SQL ] INSERT INTO `user_post_reply` (`post_id` , `content` , `msg_id` , `uid` , `time` , `status` , `pid`) VALUES (2 , '爱时代有鬼了' , 1 , 2 , 1501398772 , 0 , 1) [ RunTime:0.111750s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T16:23:38+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/postReply
+[ log ] localhost/jraz/index.php/V1/user/postReply [运行时间：0.165407s][吞吐率：6.05req/s] [内存消耗：2,872.07kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'postReply',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '151',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'target_msg_id' => '4',
+  'pid' => '3',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->postReply[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001113s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.004824s ]
+[ sql ] [ SQL ] INSERT INTO `user_post_reply` (`post_id` , `content` , `msg_id` , `uid` , `time` , `status` , `pid`) VALUES (2 , '爱时代有鬼了' , 1 , 2 , 1501403018 , 0 , 3) [ RunTime:0.099058s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T16:35:57+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/msgCount
+[ log ] localhost/jraz/index.php/V1/user/msgCount [运行时间：0.085103s][吞吐率：11.75req/s] [内存消耗：2,977.42kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'msgCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '151',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'target_msg_id' => '4',
+  'pid' => '3',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->msgCount[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001589s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.006884s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Champ '$uid' inconnu dans where clause[C:\wamp\www\jraz\thinkphp\library\think\db\Connection.php:383]
+
+---------------------------------------------------------------
+[ 2017-07-30T16:38:30+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/msgCount
+[ log ] localhost/jraz/index.php/V1/user/msgCount [运行时间：0.069877s][吞吐率：14.31req/s] [内存消耗：2,945.46kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'msgCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '151',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=1|4; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'target_msg_id' => '4',
+  'pid' => '3',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->msgCount[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.006125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user_post_reply` WHERE  (  uid=1 and status=0 ) LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user_post_reply` WHERE  (  target_msg_id=1 and status=0 ) LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_message` [ RunTime:0.005344s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user_message` WHERE  (  to_id=1 and status=0 ) LIMIT 1 [ RunTime:0.000420s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T16:39:45+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/msgCount
+[ log ] localhost/jraz/index.php/V1/user/msgCount [运行时间：0.068144s][吞吐率：14.67req/s] [内存消耗：2,945.48kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'msgCount',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '151',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=1|4; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'target_msg_id' => '4',
+  'pid' => '3',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->msgCount[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000849s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_message` [ RunTime:0.005534s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user_message` WHERE  (  to_id=1 and status=0 ) LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.004919s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user_post_reply` WHERE  (  target_msg_id=1 and status=0 ) LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user_post_reply` WHERE  (  uid=1 and status=0 ) LIMIT 1 [ RunTime:0.000551s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T16:51:04+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/msgDet
+[ log ] localhost/jraz/index.php/V1/user/msgDet [运行时间：0.074359s][吞吐率：13.45req/s] [内存消耗：2,950.55kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'msgDet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '165',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=1|4; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'cate' => 'user_msg',
+  'target_msg_id' => '4',
+  'pid' => '3',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->msgDet[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001136s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_message` [ RunTime:0.004958s ]
+[ sql ] [ SQL ] SELECT * FROM `user_message` WHERE  (  to_id=1 and status=0 ) [ RunTime:0.000438s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T16:51:16+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/msgDet
+[ log ] localhost/jraz/index.php/V1/user/msgDet [运行时间：0.073223s][吞吐率：13.66req/s] [内存消耗：2,951.09kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'msgDet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '165',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=1|4; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'cate' => 'user_msg',
+  'target_msg_id' => '4',
+  'pid' => '3',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->msgDet[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000846s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_message` [ RunTime:0.006035s ]
+[ sql ] [ SQL ] SELECT * FROM `user_message` WHERE  (  to_id=2 and status=0 ) [ RunTime:0.000453s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T16:51:24+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/msgDet
+[ log ] localhost/jraz/index.php/V1/user/msgDet [运行时间：0.070152s][吞吐率：14.25req/s] [内存消耗：2,953.78kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'msgDet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '166',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=1|4; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'cate' => 'com_reply',
+  'target_msg_id' => '4',
+  'pid' => '3',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->msgDet[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000921s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.007180s ]
+[ sql ] [ SQL ] SELECT * FROM `user_post_reply` WHERE  (  target_msg_id=1 and status=0 ) [ RunTime:0.000478s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T16:51:43+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/msgDet
+[ log ] localhost/jraz/index.php/V1/user/msgDet [运行时间：0.069919s][吞吐率：14.30req/s] [内存消耗：3,009.88kb] [文件加载：62]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'msgDet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '167',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=1|4; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'cate' => 'post_reply',
+  'target_msg_id' => '4',
+  'pid' => '3',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->msgDet[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000961s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.005391s ]
+[ sql ] [ SQL ] SELECT * FROM `user_post_reply` WHERE  (  uid=1 and status=0 ) [ RunTime:0.000531s ]
+[ error ] [8]未定义变量: com_reply[C:\wamp\www\jraz\application\V1\controller\User.php:237]
+
+---------------------------------------------------------------
+[ 2017-07-30T16:52:17+08:00 ] ::1 ::1 POST /jraz/index.php/V1/user/msgDet
+[ log ] localhost/jraz/index.php/V1/user/msgDet [运行时间：0.064226s][吞吐率：15.57req/s] [内存消耗：2,955.12kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'V1',
+    1 => 'user',
+    2 => 'msgDet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '167',
+  'referer' => 'http://localhost/phpgjx/test_request.html',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+)
+[ info ] [ PARAM ] array (
+  'cate' => 'post_reply',
+  'target_msg_id' => '4',
+  'pid' => '3',
+  'belong_uid' => '2',
+  'post_id' => '2',
+  'content' => '爱时代有鬼了',
+  'HTTP_TOKEN' => 'b2341f19479a05f3ecedb13388bc614f',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\V1\controller\User->msgDet[ C:\wamp\www\jraz\application\V1\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000941s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.007473s ]
+[ sql ] [ SQL ] SELECT * FROM `user_post_reply` WHERE  (  uid=1 and status=0 ) [ RunTime:0.000527s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:16+08:00 ] ::1 ::1 GET /jraz/
+[ log ] localhost/jraz/ [运行时间：0.156851s][吞吐率：6.38req/s] [内存消耗：2,201.58kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ./application/admin/view/public\dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:19+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Admin/login.html
+[ log ] localhost/jraz/index.php/admin/Admin/login.html [运行时间：0.226147s][吞吐率：4.42req/s] [内存消耗：3,112.06kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ C:\wamp\www\jraz\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin\login.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[C:\wamp\www\jraz\application\admin\common.php:60]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:21+08:00 ] ::1 ::1 POST /jraz/index.php/admin/Admin/login.html
+[ log ] localhost/jraz/index.php/admin/Admin/login.html [运行时间：0.232843s][吞吐率：4.29req/s] [内存消耗：3,148.35kb] [文件加载：66]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '30',
+  'referer' => 'http://localhost/jraz/index.php/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->login[ C:\wamp\www\jraz\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/public\dispatch_jump.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: login[C:\wamp\www\jraz\application\admin\common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.005028s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` INNER JOIN `admin_role` `admin_role` ON `admin`.`role_id`=`admin_role`.`role_id` WHERE  `user_name` = 'admin'  AND `password` = 'd294b6ab3f1fcbe457ba7a6bfc4e3db0' LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `last_login`=1501405341,`last_ip`='::1'  WHERE  (  admin_id = 1 ) [ RunTime:0.098557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_log` [ RunTime:0.005754s ]
+[ sql ] [ SQL ] INSERT INTO `admin_log` (`log_time` , `admin_id` , `log_info` , `log_ip` , `log_url`) VALUES (1501405341 , 1 , '后台登录' , '0.0.0.0' , '/jraz/index.php/admin/Admin/login.html') [ RunTime:0.053444s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:24+08:00 ] ::1 ::1 GET /jraz/index.php/admin/index/index.html
+[ log ] localhost/jraz/index.php/admin/index/index.html [运行时间：0.129160s][吞吐率：7.74req/s] [内存消耗：3,193.12kb] [文件加载：66]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/Admin/login.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\wamp\www\jraz\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index\index.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'order_amount',
+  4 => 'admin_info',
+  5 => 'menu',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: order_amount[C:\wamp\www\jraz\application\admin\controller\Index.php:19]
+[ error ] [8]未定义变量: admin_info[C:\wamp\www\jraz\application\admin\controller\Index.php:20]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:40]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:42]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:187]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+[ error ] [8]Use of undefined constant child - assumed 'child'[C:\wamp\www\jraz\runtime\temp\66fcc30e05a41c05f4642f9562468b87.php:192]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:24+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Index/welcome
+[ log ] localhost/jraz/index.php/admin/Index/welcome [运行时间：0.067820s][吞吐率：14.74req/s] [内存消耗：3,023.04kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ C:\wamp\www\jraz\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] ./application/admin/view/index\welcome.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'sys_info',
+  4 => 'count',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: welcome[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: count[C:\wamp\www\jraz\application\admin\controller\Index.php:36]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000732s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT VERSION() as version [ RunTime:0.000735s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:25+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Index/index.php?act=set_statistical_chart&type=sale&date=week
+[ log ] localhost/jraz/index.php/admin/Index/index.php?act=set_statistical_chart&type=sale&date=week [运行时间：0.068831s][吞吐率：14.53req/s] [内存消耗：2,984.49kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/jraz/index.php/admin/Index/welcome',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1; workspaceParam=welcome%7CIndex',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'act' => 'set_statistical_chart',
+  'type' => 'sale',
+  'date' => 'week',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: index.php[C:\wamp\www\jraz\application\admin\common.php:60]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:25+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Index/index.php?act=set_statistical_chart&type=order&date=week
+[ log ] localhost/jraz/index.php/admin/Index/index.php?act=set_statistical_chart&type=order&date=week [运行时间：0.092924s][吞吐率：10.76req/s] [内存消耗：2,984.55kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://localhost/jraz/index.php/admin/Index/welcome',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1; workspaceParam=welcome%7CIndex',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'act' => 'set_statistical_chart',
+  'type' => 'order',
+  'date' => 'week',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: index.php[C:\wamp\www\jraz\application\admin\common.php:60]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:27+08:00 ] ::1 ::1 GET /jraz/index.php/admin/System/index
+[ log ] localhost/jraz/index.php/admin/System/index [运行时间：0.248787s][吞吐率：4.02req/s] [内存消耗：3,085.76kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\System->index[ C:\wamp\www\jraz\application\admin\controller\System.php ]
+[ info ] [ VIEW ] ./application/admin/view/system\news_set.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'group_list',
+  4 => 'inc_type',
+  5 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:191]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:192]
+[ error ] [8]Use of undefined constant search_cate - assumed 'search_cate'[C:\wamp\www\jraz\runtime\temp\81166361feabfacfbed80a4dc3cd3717.php:193]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:39+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Admin/index
+[ log ] localhost/jraz/index.php/admin/Admin/index [运行时间：0.132942s][吞吐率：7.52req/s] [内存消耗：3,163.05kb] [文件加载：65]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1; workspaceParam=index%7CSystem',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Admin->index[ C:\wamp\www\jraz\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] ./application/admin/view/admin\index.html [ array (
+  0 => 'action',
+  1 => 'tpshop_config',
+  2 => 'navigate_admin',
+  3 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: page[C:\wamp\www\jraz\runtime\temp\fcad6674f5c550135818afe91986a612.php:240]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000758s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.006340s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin_role` [ RunTime:0.006485s ]
+[ sql ] [ SQL ] SELECT `role_id`,`role_name` FROM `admin_role` [ RunTime:0.000353s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:53+08:00 ] ::1 ::1 GET /jraz/index.php/admin/News/newsList
+[ log ] localhost/jraz/index.php/admin/News/newsList [运行时间：0.141110s][吞吐率：7.09req/s] [内存消耗：3,235.77kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1; workspaceParam=index%7CAdmin',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000802s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.005739s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 ORDER BY id desc LIMIT 0,7 [ RunTime:0.062297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.005302s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000387s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:53+08:00 ] ::1 ::1 GET /jraz/index.php/admin/User/index
+[ log ] localhost/jraz/index.php/admin/User/index [运行时间：0.038046s][吞吐率：26.28req/s] [内存消耗：1,780.59kb] [文件加载：47]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'User',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-07-30T17:02:54+08:00 ] ::1 ::1 GET /jraz/index.php/admin/News/newsList
+[ log ] localhost/jraz/index.php/admin/News/newsList [运行时间：0.095127s][吞吐率：10.51req/s] [内存消耗：3,235.76kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1; workspaceParam=index%7CUser',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000761s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.006161s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 ORDER BY id desc LIMIT 0,7 [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.005104s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000418s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:03:01+08:00 ] ::1 ::1 GET /jraz/index.php/admin/Life/houseRent
+[ log ] localhost/jraz/index.php/admin/Life/houseRent [运行时间：0.132539s][吞吐率：7.54req/s] [内存消耗：3,139.11kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Life',
+    2 => 'houseRent',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1; workspaceParam=newsList%7CNews',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Life->houseRent[ C:\wamp\www\jraz\application\admin\controller\Life.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/life\houseRent.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+  3 => 'page',
+  4 => 'pager',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/life[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000723s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `life_house_rent` [ RunTime:0.005579s ]
+[ sql ] [ SQL ] SELECT * FROM `life_house_rent` WHERE  `type` LIKE 0  AND `status` LIKE 0  AND `title` LIKE '%%' LIMIT 0,7 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `life_house_rent` WHERE  `type` LIKE 0  AND `status` LIKE 0  AND `title` LIKE '%%' LIMIT 1 [ RunTime:0.000456s ]
+
+---------------------------------------------------------------
+[ 2017-07-30T17:03:02+08:00 ] ::1 ::1 GET /jraz/index.php/admin/News/newsList
+[ log ] localhost/jraz/index.php/admin/News/newsList [运行时间：0.084199s][吞吐率：11.88req/s] [内存消耗：3,235.84kb] [文件加载：64]
+[ info ] [ LANG ] C:\wamp\www\jraz\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'News',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:54.0) Gecko/20100101 Firefox/54.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost/jraz/index.php/admin/index/index.html',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=3e9snebpeluonufoq2q4b5ar94; admin_type=1; workspaceParam=houseRent%7CLife',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\News->newsList[ C:\wamp\www\jraz\application\admin\controller\News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news\newsList.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'news',
+  3 => 'page',
+  4 => 'pager',
+  5 => 'category',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:59]
+[ error ] [8]未定义数组索引: admin/news[C:\wamp\www\jraz\application\admin\common.php:60]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ error ] [8]未定义变量: class[C:\wamp\www\jraz\thinkphp\helper.php:587]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000760s ] mysql:dbname=jraz;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.005260s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 ORDER BY id desc LIMIT 0,7 [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.005709s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `title` LIKE '%%'  AND `status` LIKE 0 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `news_category` [ RunTime:0.000411s ]
+
+---------------------------------------------------------------

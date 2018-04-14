@@ -1,0 +1,441 @@
+[ 2017-09-14T22:59:04+08:00 ] 172.19.27.227 117.136.66.129 POST /jraz/api/news/newsCate
+[ log ] 106.15.199.8/jraz/api/news/newsCate [运行时间：0.024238s][吞吐率：41.26req/s] [内存消耗：3,174.45kb] [文件加载：52]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'newsCate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'token' => '',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '6',
+  'host' => '106.15.199.8',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.8.0',
+)
+[ info ] [ PARAM ] array (
+  'type' => '1',
+)
+[ info ] [ RUN ] app\api\controller\News->newsCate[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000727s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news_category` [ RunTime:0.000971s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`description` FROM `news_category` WHERE  `cate` = 1 [ RunTime:0.000556s ]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:04+08:00 ] 172.19.27.227 117.136.66.129 POST /jraz/api/news/newsList
+[ log ] 106.15.199.8/jraz/api/news/newsList [运行时间：0.025552s][吞吐率：39.14req/s] [内存消耗：3,288.73kb] [文件加载：56]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'token' => '',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '13',
+  'host' => '106.15.199.8',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.8.0',
+)
+[ info ] [ PARAM ] array (
+  'cate_id' => '1',
+  'p' => '1',
+)
+[ info ] [ RUN ] app\api\controller\News->newsList[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`picture`,`source`,`comment` FROM `news` WHERE  `cate` = 1  AND `status` = 1 ORDER BY publish_time desc LIMIT 0,5 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `cate` = 1  AND `status` = 1 LIMIT 1 [ RunTime:0.000478s ]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:04+08:00 ] 172.19.27.227 117.136.66.129 POST /jraz/api/news/newsList
+[ log ] 106.15.199.8/jraz/api/news/newsList [运行时间：0.024812s][吞吐率：40.30req/s] [内存消耗：3,287.41kb] [文件加载：56]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'newsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'token' => '',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '13',
+  'host' => '106.15.199.8',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.8.0',
+)
+[ info ] [ PARAM ] array (
+  'cate_id' => '2',
+  'p' => '1',
+)
+[ info ] [ RUN ] app\api\controller\News->newsList[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000678s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`picture`,`source`,`comment` FROM `news` WHERE  `cate` = 2  AND `status` = 1 ORDER BY publish_time desc LIMIT 0,5 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `news` WHERE  `cate` = 2  AND `status` = 1 LIMIT 1 [ RunTime:0.000463s ]
+[ error ] [8]未定义变量: class[/opt/php/jraz/thinkphp/helper.php:587]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:04+08:00 ] 172.19.27.227 117.136.66.129 POST /jraz/api/news/rotationList
+[ log ] 106.15.199.8/jraz/api/news/rotationList [运行时间：0.023220s][吞吐率：43.07req/s] [内存消耗：3,172.63kb] [文件加载：52]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'rotationList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'token' => '',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '9',
+  'host' => '106.15.199.8',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.8.0',
+)
+[ info ] [ PARAM ] array (
+  'cate_id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\News->rotationList[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000699s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.000958s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`picture` FROM `news` WHERE  `cate` = 1  AND `status` = 1  AND `is_rotation` = 1 ORDER BY publish_time desc LIMIT 5 [ RunTime:0.000606s ]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:04+08:00 ] 172.19.27.227 117.136.66.129 POST /jraz/api/news/rotationList
+[ log ] 106.15.199.8/jraz/api/news/rotationList [运行时间：0.023164s][吞吐率：43.17req/s] [内存消耗：3,181.27kb] [文件加载：52]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'rotationList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'token' => '',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '9',
+  'host' => '106.15.199.8',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.8.0',
+)
+[ info ] [ PARAM ] array (
+  'cate_id' => '2',
+)
+[ info ] [ RUN ] app\api\controller\News->rotationList[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000609s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`picture` FROM `news` WHERE  `cate` = 2  AND `status` = 1  AND `is_rotation` = 1 ORDER BY publish_time desc LIMIT 5 [ RunTime:0.000544s ]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:05+08:00 ] 172.19.27.227 117.136.66.129 POST /jraz/api/news/weather
+[ log ] 106.15.199.8/jraz/api/news/weather [运行时间：0.158162s][吞吐率：6.32req/s] [内存消耗：2,222.75kb] [文件加载：45]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'weather',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'token' => '',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '13',
+  'host' => '106.15.199.8',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.8.0',
+)
+[ info ] [ PARAM ] array (
+  'city' => 'Canberra',
+)
+[ info ] [ RUN ] app\api\controller\News->weather[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:13+08:00 ] 172.19.27.227 117.136.66.129 POST /jraz/api/news/newsDet
+[ log ] 106.15.199.8/jraz/api/news/newsDet [运行时间：0.028966s][吞吐率：34.52req/s] [内存消耗：3,207.18kb] [文件加载：52]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'newsDet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'token' => '',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '6',
+  'host' => '106.15.199.8',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.8.0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '218',
+)
+[ info ] [ RUN ] app\api\controller\News->newsDet[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001008s ]
+[ sql ] [ SQL ] SELECT `id`,`author_id`,`title`,`publish_time`,`source`,`statement`,`interest` FROM `news` WHERE  `id` = 218 LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT `value` FROM `config` WHERE  `desc` = '1' LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_portrait` FROM `admin` WHERE  (  admin_id=1 ) LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT `id`,`post_id`,`msg_id`,`time`,`content`,`pid` FROM `user_post_reply` WHERE  `post_id` = 218  AND `pid` = 0 LIMIT 3 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`publish_time`,`source`,`picture` FROM `news` WHERE  `publish_time` <= 1505318400  AND `status` = 1 ORDER BY id desc LIMIT 3 [ RunTime:0.000451s ]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:14+08:00 ] 172.19.27.227 117.136.66.129 GET /jraz/admin/news/test/id/218
+[ log ] 106.15.199.8/jraz/admin/news/test/id/218 [运行时间：0.028631s][吞吐率：34.93req/s] [内存消耗：3,480.08kb] [文件加载：62]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; PRO 6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.146 Mobile Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=hv3ug38guuesqr0u5p761l97o5',
+  'x-requested-with' => 'com.ant',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '218',
+)
+[ info ] [ RUN ] app\admin\controller\News->test[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/test.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000742s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `id` = 218 LIMIT 1 [ RunTime:0.000598s ]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:33+08:00 ] 172.19.27.227 117.136.66.129 POST /jraz/api/news/newsDet
+[ log ] 106.15.199.8/jraz/api/news/newsDet [运行时间：0.029645s][吞吐率：33.73req/s] [内存消耗：3,207.30kb] [文件加载：52]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'newsDet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'token' => '',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '6',
+  'host' => '106.15.199.8',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.8.0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '246',
+)
+[ info ] [ RUN ] app\api\controller\News->newsDet[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000780s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT `id`,`author_id`,`title`,`publish_time`,`source`,`statement`,`interest` FROM `news` WHERE  `id` = 246 LIMIT 1 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT `value` FROM `config` WHERE  `desc` = '1' LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_portrait` FROM `admin` WHERE  (  admin_id=1 ) LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT `id`,`post_id`,`msg_id`,`time`,`content`,`pid` FROM `user_post_reply` WHERE  `post_id` = 246  AND `pid` = 0 LIMIT 3 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`publish_time`,`source`,`picture` FROM `news` WHERE  `publish_time` <= 1505318400  AND `status` = 1 ORDER BY id desc LIMIT 3 [ RunTime:0.000480s ]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:33+08:00 ] 172.19.27.227 117.136.66.129 GET /jraz/admin/news/test/id/246
+[ log ] 106.15.199.8/jraz/admin/news/test/id/246 [运行时间：0.029249s][吞吐率：34.19req/s] [内存消耗：3,491.49kb] [文件加载：62]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; PRO 6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.146 Mobile Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=hv3ug38guuesqr0u5p761l97o5',
+  'x-requested-with' => 'com.ant',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '246',
+)
+[ info ] [ RUN ] app\admin\controller\News->test[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/test.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000777s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `id` = 246 LIMIT 1 [ RunTime:0.000611s ]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:37+08:00 ] 172.19.27.227 117.136.66.129 POST /jraz/api/news/newsDet
+[ log ] 106.15.199.8/jraz/api/news/newsDet [运行时间：0.029172s][吞吐率：34.28req/s] [内存消耗：3,207.18kb] [文件加载：52]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'news',
+    2 => 'newsDet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'token' => '',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '6',
+  'host' => '106.15.199.8',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'okhttp/3.8.0',
+)
+[ info ] [ PARAM ] array (
+  'id' => '218',
+)
+[ info ] [ RUN ] app\api\controller\News->newsDet[ /opt/php/jraz/application/api/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000753s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT `id`,`author_id`,`title`,`publish_time`,`source`,`statement`,`interest` FROM `news` WHERE  `id` = 218 LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT `value` FROM `config` WHERE  `desc` = '1' LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT `nickname`,`head_portrait` FROM `admin` WHERE  (  admin_id=1 ) LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user_post_reply` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT `id`,`post_id`,`msg_id`,`time`,`content`,`pid` FROM `user_post_reply` WHERE  `post_id` = 218  AND `pid` = 0 LIMIT 3 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`publish_time`,`source`,`picture` FROM `news` WHERE  `publish_time` <= 1505318400  AND `status` = 1 ORDER BY id desc LIMIT 3 [ RunTime:0.000464s ]
+
+---------------------------------------------------------------
+[ 2017-09-14T22:59:37+08:00 ] 172.19.27.227 117.136.66.129 GET /jraz/admin/news/test/id/218
+[ log ] 106.15.199.8/jraz/admin/news/test/id/218 [运行时间：0.029055s][吞吐率：34.42req/s] [内存消耗：3,479.75kb] [文件加载：62]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; PRO 6 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/44.0.2403.146 Mobile Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'cookie' => 'PHPSESSID=hv3ug38guuesqr0u5p761l97o5',
+  'x-requested-with' => 'com.ant',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '218',
+)
+[ info ] [ RUN ] app\admin\controller\News->test[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/test.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000754s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `id` = 218 LIMIT 1 [ RunTime:0.000606s ]
+
+---------------------------------------------------------------

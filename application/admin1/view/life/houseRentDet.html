@@ -1,0 +1,140 @@
+<include file="public/layout" />
+<body style="background-color: #FFF; overflow: auto;"> 
+<div class="page">
+  <div class="fixed-bar">
+    <div class="item-title"><a class="back" href="javascript:history.back();" title="返回列表"><i class="fa fa-arrow-circle-o-left"></i></a>
+      <div class="subject">
+        <h3>房屋出租审核</h3>
+        <h5>出租房屋信息审核与管理</h5>
+      </div>
+    </div>
+  </div>
+	<form action="{:U('Life/houseHandel',array('act'=>'check'))}" method="post" class="form-horizontal">
+    <div class="ncap-form-default">
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">标题</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="title" value="{$list.title}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">详细描述</label>
+        </dt>
+        <dd class="opt">
+          <textarea style="height:120px; width:280px;" name="content" disabled="disabled">{$list.content}</textarea>
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">区域</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="area" value="{$list.area}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">户型</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="house_type" value="{$list.house_type}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">出租方式</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="rent_way" value="{$list.rent_way}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">空出时间</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="empty_time" value="{$list.empty_time}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">房屋来源</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="house_source" value="{$list.house_source}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">出租价格</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="price" value="{$list.title}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">联系人名字</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="contact_name" value="{$list.contact_name}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">联系人电话</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="contact_phone" value="{$list.contact_phone}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">微信</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="weixin" value="{$list.weixin}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">QQ</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="qq" value="{$list.qq}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">邮箱</label>
+        </dt>
+        <dd class="opt">
+          <input type="email" class="input-txt" name="email" value="{$list.email}" disabled="disabled">
+        </dd>
+      </dl>
+      <dl class="row">
+        <dt class="tit">
+          <label for="ac_name">标签</label>
+        </dt>
+        <dd class="opt">
+          <input type="text" class="input-txt" name="label" value="{$list.label}" disabled="disabled">
+        </dd>
+      </dl>
+      <div class="bot">
+        <h3>审核：</h3>　　　
+          <input type="radio" name="status" value="1"  <if condition="$list[status] eq 1"> checked </if> > 通 过  　
+          <input type="radio" name="status" value="2" <if condition="$list[status] eq -1"> checked </if> > 不 通 过
+      </div>
+      <div class="bot"><a href="JavaScript:void(0);" onClick="$('.form-horizontal').submit();" class="ncap-btn-big ncap-btn-green" id="submitBtn">确认提交</a></div>
+    </div>
+        <input type="hidden" name="id" value="{$list.id}">    
+  </form>
+</div>
+<script>
+
+</script>
+</body>
+</html>

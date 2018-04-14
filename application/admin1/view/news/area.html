@@ -1,0 +1,133 @@
+{include file="public/layout" /}
+<body style="background-color: #FFF; overflow: auto;">
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div class="page">
+    <div class="fixed-bar">
+        <div class="item-title">
+            <div class="subject">
+                <h3>Demo</h3>
+                <h5>地区选择</h5>
+            </div>
+        </div>
+    </div>
+    <!-- 操作说明 -->
+    <!-- <div class="explanation" id="explanation">
+        <div class="title" id="checkZoom"><i class="fa fa-lightbulb-o"></i>
+            <h4 title="提示相关设置操作时应注意的要点">操作提示</h4>
+            <span id="explanationZoom" title="收起提示"></span> </div>
+        <ul>
+            <li>提示收起与显示</li>
+        </ul>
+    </div> -->
+    <form method="post" id="handlepost" action="{:U('Demo/handle')}" enctype="multipart/form-data" name="form1">
+        <input type="hidden" name="form_submit" value="ok" />
+        <div class="ncap-form-default">
+            
+            <dl class="row">
+                <dt class="tit">
+                    <label for="store_logo">网站Logo</label>
+                </dt>
+                <dd class="opt">
+                    <div class="input-file-show">
+                        <span class="show">
+                            <a id="img_a" class="nyroModal" rel="gal" href="{$config.picture}">
+                                <i id="img_i" class="fa fa-picture-o" onmouseover="layer.tips('<img src={$config.picture}>',this,{tips: [1, '#fff']});" onmouseout="layer.closeAll();"></i>
+                            </a>
+                            <!-- <input type="text" name="" value="{$config[picture]}" /> -->
+                        </span>
+           	            <span class="type-file-box">
+                            <input type="text" id="picture" name="picture" value="{$config.picture}" class="type-file-text">
+                            <input type="button" name="button" id="button1" value="选择上传..." class="type-file-button">
+                            <input class="type-file-file" onClick="GetUploadify(1,'1','temp','img_call_back')" size="30" hidefocus="true" nc_type="change_site_logo" title="点击前方预览图可查看大图，点击按钮选择文件并提交表单后上传生效">
+                        </span>
+                    </div>
+                    <span class="err"></span>
+                    <p class="notic">默认网站LOGO,通用头部显示，最佳显示尺寸为240*60像素</p>
+                </dd>
+            </dl>
+            <!-- 地址添加 -->
+            <dl class="row">
+                <dt class="tit">
+                    <label for="address">具体地址</label>
+                </dt>
+                <dd class="opt">
+                    <!-- <select onchange="get_city(this)" id="province" name="province">
+                        <option  value="0">选择省份</option>
+                        <volist name="province" id="vo">
+                            <option value="{$vo.id}" <if condition="$config[province] eq $vo[id]">selected</if>>{$vo.name}</option>
+                        </volist>
+                    </select> -->
+                    <select onchange="get_city(this)" id="province" name="province">
+                        <option  value="0">选择省份</option>
+                        {volist name="province" id="vo"}
+                        	<option value="{$vo.id}">{$vo.name}</option>
+                        {/volist}
+                    </select>
+                    <select onchange="get_area(this);" id="city" name="city">
+                        <option value="0">选择城市</option>
+                        {volist name="city" id="vo"}
+                        	<option value="{$vo.id}">{$vo.name}</option>
+                        {/volist}
+                    </select>
+                    <select onchange="get_twon(this);" id="district" name="district">
+                        <option value="0">选择区域</option>
+                        {volist name="area" id="vo"}
+                        	<option value="{$vo.id}">{$vo.name}</option>
+                        {/volist}
+                    </select>
+                    <select id="twon" name="twon">
+                        <option value="0">选择乡镇</option>
+                        {volist name="twon" id="vo"}
+                        	<option value="{$vo.id}">{$vo.name}</option>
+                        {/volist}
+                    </select>
+                    <input id="address" name="address" value="{$config.address}" class="input-txt" type="text" />
+                    <p class="notic">具体地址</p>
+                </dd>
+            </dl>
+            <div class="bot">
+                <input type="hidden" name="act" value="add">
+                <a href="JavaScript:void(0);" class="ncap-btn-big ncap-btn-green" onclick="document.form1.submit()">确认提交</a>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="goTop"> <a href="JavaScript:void(0);" id="btntop"><i class="fa fa-angle-up"></i></a><a href="JavaScript:void(0);" id="btnbottom"><i class="fa fa-angle-down"></i></a></div>
+</body>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $("#checkZoom").toggle(function() {
+        $("#explanation").animate({
+            color: "#FFF",
+            backgroundColor: "#4FD6BE",
+            width: "80",
+            height: "20",
+        }, 200);
+        $("#explanationZoom").hide();
+    }, 
+    function() {
+        $("#explanation").animate({
+            color: "#2CBCA3",
+            backgroundColor: "#EDFBF8",
+            width: "99%",
+            height: "20",
+        }, 200,function(){
+            $(this).css('height','10%');
+        });
+        $("#explanationZoom").show();
+    }); 
+});  
+</script>
+<script type="text/javascript">
+function img_call_back(fileurl_tmp)
+    {
+    	var fileurl_tmp;
+    	var fileurl_tmp = "{$web_path}" + fileurl_tmp;
+
+        $("#picture").val(fileurl_tmp);
+        $("#img_a").attr('href', fileurl_tmp);
+        $("#img_i").attr('onmouseover', "layer.tips('<img src="+fileurl_tmp+">',this,{tips: [1, '#fff']});");
+    }
+</script>
+</html>

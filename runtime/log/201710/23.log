@@ -1,0 +1,41 @@
+[ 2017-10-23T18:02:33+08:00 ] 172.19.27.227 180.102.121.97 GET /jraz/admin/news/test/id/164
+[ log ] 106.15.199.8/jraz/admin/news/test/id/164 [运行时间：0.029488s][吞吐率：33.91req/s] [内存消耗：3,477.11kb] [文件加载：62]
+[ info ] [ LANG ] /opt/php/jraz/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'news',
+    2 => 'test',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '106.15.199.8',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Mobile/15A372',
+  'accept-language' => 'en-us',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '164',
+)
+[ info ] [ RUN ] app\admin\controller\News->test[ /opt/php/jraz/application/admin/controller/News.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./application/admin/view/news/test.html [ array (
+  0 => 'action',
+  1 => 'navigate_admin',
+  2 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:59]
+[ error ] [8]未定义数组索引: admin/news[/opt/php/jraz/application/admin/common.php:60]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000879s ] mysql:dbname=jraz;host=106.15.199.8;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `news` [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT * FROM `news` WHERE  `id` = 164 LIMIT 1 [ RunTime:0.000605s ]
+
+---------------------------------------------------------------

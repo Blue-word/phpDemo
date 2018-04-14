@@ -1,0 +1,326 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Base	.\Base.php	/^class Base extends Controller {$/;"	c
+Goods	.\Goods.php	/^        $Goods = new \\app\\admin\\model\\Goods(); \/\/$/;"	v
+Goods	.\Goods.php	/^class Goods extends Base {$/;"	c
+GoodsCategory	.\Goods.php	/^            $GoodsCategory = D('GoodsCategory'); \/\/$/;"	v
+GoodsCategory	.\Goods.php	/^        $GoodsCategory = M("goods_category");$/;"	v
+GoodsLogic	.\Goods.php	/^            $GoodsLogic = new GoodsLogic();        $/;"	v
+GoodsLogic	.\Goods.php	/^           $GoodsLogic = new GoodsLogic();  $/;"	v
+GoodsLogic	.\Goods.php	/^         $GoodsLogic = new GoodsLogic();$/;"	v
+GoodsLogic	.\Goods.php	/^        $GoodsLogic = new GoodsLogic();               $/;"	v
+GoodsLogic	.\Goods.php	/^        $GoodsLogic = new GoodsLogic();        $/;"	v
+GoodsLogic	.\Goods.php	/^        $GoodsLogic = new GoodsLogic();$/;"	v
+Index	.\Index.php	/^class Index extends Controller$/;"	c
+Page	.\Goods.php	/^        $Page       = new AjaxPage($count,13);$/;"	v
+Page	.\Goods.php	/^        $Page  = new AjaxPage($count,10);$/;"	v
+Page	.\Goods.php	/^        $Page = $pager = new Page($count,10);        $/;"	v
+Page	.\Goods.php	/^        $Page = $pager = new Page($count,14);$/;"	v
+Plugin	.\Plugin.php	/^class Plugin extends Base {$/;"	c
+System	.\System.php	/^class System extends Base{$/;"	c
+Test	.\Test.php	/^class Test$/;"	c
+UserType	.\UserType.php	/^class UserType$/;"	c
+__construct	.\Base.php	/^    function __construct() $/;"	f
+_initialize	.\Base.php	/^    \/\/ public function _initialize() $/;"	f
+_initialize	.\Plugin.php	/^    public function _initialize()$/;"	f
+act	.\Base.php	/^    	$act = ACTION_NAME;$/;"	v
+act_list	.\Base.php	/^    	if($ctl == 'Index' || $act_list == 'all'){$/;"	v
+act_list	.\Base.php	/^        $act_list = session('act_list');$/;"	v
+act_list	.\Index.php	/^        \/\/ $act_list = session('act_list');$/;"	v
+add2	.\Plugin.php	/^            $add2 = array();$/;"	v
+addEditBrand	.\Goods.php	/^    public  function addEditBrand(){        $/;"	f
+addEditCategory	.\Goods.php	/^    public function addEditCategory(){$/;"	f
+addEditGoods	.\Goods.php	/^    public function addEditGoods()$/;"	f
+addEditGoodsAttribute	.\Goods.php	/^    public  function addEditGoodsAttribute(){$/;"	f
+addEditGoodsType	.\Goods.php	/^    public function addEditGoodsType()$/;"	f
+addEditSpec	.\Goods.php	/^    public  function addEditSpec(){$/;"	f
+add_shipping	.\Plugin.php	/^    public function add_shipping()$/;"	f
+ajaxGetAttrInput	.\Goods.php	/^    public function ajaxGetAttrInput(){$/;"	f
+ajaxGetAttrList	.\Goods.php	/^    public function ajaxGetAttrList(){$/;"	f
+ajaxGetSpecInput	.\Goods.php	/^    public function ajaxGetSpecInput(){     $/;"	f
+ajaxGetSpecList	.\Goods.php	/^    public function ajaxGetSpecList(){$/;"	f
+ajaxGetSpecSelect	.\Goods.php	/^    public function ajaxGetSpecSelect(){$/;"	f
+ajaxGoodsAttributeList	.\Goods.php	/^    public function ajaxGoodsAttributeList(){            $/;"	f
+ajaxGoodsList	.\Goods.php	/^    public function ajaxGoodsList(){            $/;"	f
+ajaxReturn	.\Base.php	/^    public function ajaxReturn($data,$type = 'json'){                        $/;"	f
+ajaxSpecList	.\Goods.php	/^    public function ajaxSpecList(){ $/;"	f
+area	.\System.php	/^		\/\/ 	$area =  M('region')->where(array('parent_id'=>$config['city']))->select();$/;"	v
+area_list	.\Plugin.php	/^            $area_list = I('post.area_list\/a',[]);$/;"	v
+arr	.\Goods.php	/^                $arr = $GoodsLogic->getSpecItem($v['id']);$/;"	v
+attr_id	.\Goods.php	/^           $attr_id = I('attr_id\/d',0);  $/;"	v
+attr_input_type	.\Goods.php	/^        $attr_input_type = array(0=>'手工录入',1=>' 从列表中选择',2=>' 多行文本框');$/;"	v
+attr_values	.\Goods.php	/^            $attr_values = str_replace('@', '', $attr_values); \/\/ 替换特殊字符            $/;"	v
+attr_values	.\Goods.php	/^            $attr_values = str_replace('_', '', I('attr_values')); \/\/ 替换特殊字符$/;"	v
+attr_values	.\Goods.php	/^            $attr_values = trim($attr_values);$/;"	v
+brand	.\Goods.php	/^           $brand = M("Brand")->find($id);             $/;"	v
+brandList	.\Goods.php	/^        $brandList = $GoodsLogic->getSortBrands();$/;"	v
+brandList	.\Goods.php	/^        $brandList = $model->where($where)->order("`sort` asc")->limit($Page->firstRow.','.$Page->listRows)->select();$/;"	v
+brandList	.\Goods.php	/^    public function brandList(){  $/;"	f
+c	.\Plugin.php	/^        $c = M('shipping_area')->where('shipping_code',$code)->count();$/;"	v
+c1	.\Goods.php	/^        $c1 = M('OrderGoods')->where("goods_id = $goods_id")->count('1');$/;"	v
+c1	.\Goods.php	/^        $c1 = M('group_buy')->where("goods_id = $goods_id")->count('1');$/;"	v
+c1	.\Goods.php	/^        $c1 = M('return_goods')->where("goods_id = $goods_id")->count('1');$/;"	v
+catList	.\Goods.php	/^        $catList = D('goods_category')->select();$/;"	v
+catList	.\Goods.php	/^        $catList = convert_arr_key($catList, 'id');$/;"	v
+cat_id	.\Goods.php	/^        $cat_id = I('cat_id');$/;"	v
+cat_list	.\Goods.php	/^                $cat_list = M('goods_category')->where("parent_id = 0")->select(); \/\/ 已经改成联动菜单                $/;"	v
+cat_list	.\Goods.php	/^           $cat_list = M('goods_category')->where("parent_id = 0")->select(); \/\/ 已经改成联动菜单$/;"	v
+cat_list	.\Goods.php	/^        $cat_list = $GoodsLogic->goods_cat_list();$/;"	v
+cat_list	.\Goods.php	/^        $cat_list = M('goods_category')->where("parent_id = 0")->getField('id,name'); \/\/ 已经改成联动菜单$/;"	v
+cat_list	.\Goods.php	/^        $cat_list = M('goods_category')->where("parent_id = 0")->select(); \/\/ 已经改成联动菜单$/;"	v
+categoryList	.\Goods.php	/^        $categoryList = $GoodsLogic->getSortCategory();$/;"	v
+categoryList	.\Goods.php	/^    public function categoryList(){                $/;"	f
+changeTableVal	.\Index.php	/^    public function changeTableVal(){  $/;"	f
+check	.\Goods.php	/^                    $check = $validate->batch()->check($post_data);$/;"	v
+check	.\Goods.php	/^                    $check = $validate->scene('edit')->batch()->check($post_data);$/;"	v
+checkExist	.\Plugin.php	/^    private function checkExist(){$/;"	f
+check_priv	.\Base.php	/^    public function check_priv()$/;"	f
+children	.\Goods.php	/^                        $children = M('goods_category')->where($children_where)->max('level');$/;"	v
+children_where	.\Goods.php	/^                        $children_where = array($/;"	v
+city	.\System.php	/^		\/\/ 	$city =  M('region')->where(array('parent_id'=>$config['province']))->select();$/;"	v
+code	.\Plugin.php	/^    		$code = I('code');$/;"	v
+code	.\Plugin.php	/^        $code = I('code'); \/\/ 编码$/;"	v
+code	.\Plugin.php	/^        $code = I('post.code');$/;"	v
+code	.\Plugin.php	/^        $code = strtolower($code);$/;"	v
+config	.\Plugin.php	/^    		$config = array($/;"	v
+config	.\Plugin.php	/^        	$config = array('width'=>840,'height'=>480,'offset_x'=>0,'offset_y'=>0);$/;"	v
+config	.\Plugin.php	/^                $config = serialize($config);$/;"	v
+config	.\Plugin.php	/^            $config = I('post.config\/a');$/;"	v
+config	.\Plugin.php	/^            $config = include $file;$/;"	v
+config	.\Plugin.php	/^            $config = trim_array_element($config);$/;"	v
+config_html	.\Plugin.php	/^        $config_html = "<?php$/;"	v
+count	.\Goods.php	/^        $count = $GoodsCategory->where("parent_id = {$id}")->count("id");$/;"	v
+count	.\Goods.php	/^        $count = $model->count();        $/;"	v
+count	.\Goods.php	/^        $count = $model->where($where)->count();$/;"	v
+count	.\Goods.php	/^        $count = M("GoodsAttr")->where("attr_id = {$id}")->count("1");$/;"	v
+count	.\Goods.php	/^        $count = M("GoodsAttribute")->where("type_id = {$id}")->count("1");$/;"	v
+count	.\Goods.php	/^        $count = M("Spec")->where("type_id = {$id}")->count("1");$/;"	v
+count	.\Goods.php	/^        $count = M("SpecItem")->where("spec_id = {$id}")->count("1");$/;"	v
+ctl	.\Base.php	/^    	$ctl = CONTROLLER_NAME;$/;"	v
+d_list	.\Plugin.php	/^        $d_list =  M('plugin')->field('code,type')->select(); \/\/ 数据库$/;"	v
+data	.\Goods.php	/^                    $data = input('post.');$/;"	v
+data	.\Goods.php	/^            $data = $this->request->post();$/;"	v
+delBrand	.\Goods.php	/^    public function delBrand()$/;"	f
+delGoods	.\Goods.php	/^    public function delGoods()$/;"	f
+delGoodsAttribute	.\Goods.php	/^    public function delGoodsAttribute()$/;"	f
+delGoodsCategory	.\Goods.php	/^    public function delGoodsCategory(){$/;"	f
+delGoodsSpec	.\Goods.php	/^    public function delGoodsSpec()$/;"	f
+delGoodsType	.\Goods.php	/^    public function delGoodsType()$/;"	f
+del_area	.\Plugin.php	/^    public function del_area(){$/;"	f
+del_goods_images	.\Goods.php	/^    public function del_goods_images()$/;"	f
+del_shipping	.\Plugin.php	/^    public function del_shipping($code){$/;"	f
+desc	.\Plugin.php	/^        $desc = I('desc', '');\/\/ 插件描述$/;"	v
+desc	.\Plugin.php	/^        $desc = I('post.desc');$/;"	v
+dir	.\Plugin.php	/^        $dir = ".\/plugins\/shipping\/$code";$/;"	v
+dir	.\Plugin.php	/^        $dir = PLUGIN_PATH."shipping\/$code";$/;"	v
+dirArray	.\Plugin.php	/^        $dirArray = array();$/;"	v
+dirscan	.\Plugin.php	/^    private function dirscan($dir){$/;"	f
+error	.\Goods.php	/^                        $error = $validate->getError();$/;"	v
+error	.\Goods.php	/^                    $error = $validate->getError();$/;"	v
+error	.\Goods.php	/^                $error = $validate->getError();$/;"	v
+error	.\Goods.php	/^        $error = '';$/;"	v
+error_msg	.\Goods.php	/^                        $error_msg = array_values($error);$/;"	v
+error_msg	.\Goods.php	/^                    $error_msg = array_values($error);$/;"	v
+error_msg	.\Goods.php	/^                $error_msg = array_values($error);$/;"	v
+execute_sql	.\Plugin.php	/^                $execute_sql = $plugin->install_sql(); \/\/ 执行安装sql 语句$/;"	v
+execute_sql	.\Plugin.php	/^                $execute_sql = $plugin->uninstall_sql(); \/\/ 执行卸载sql 语句$/;"	v
+field	.\Index.php	/^            $field  = I('field'); \/\/ 修改哪个字段$/;"	v
+file	.\Plugin.php	/^            $file = PLUGIN_PATH.$condition['type'].'\/'.$condition['code'].'\/config.php';$/;"	v
+file_name	.\Plugin.php	/^                $file_name = $info->getFilename();$/;"	v
+filter_attr	.\Goods.php	/^        $filter_attr = M('GoodsCategory')->where("id = ".$_REQUEST['category_id'])->getField('filter_attr');        $/;"	v
+filter_attr_arr	.\Goods.php	/^        $filter_attr_arr = explode(',',$filter_attr);        $/;"	v
+filter_spec	.\Goods.php	/^        $filter_spec = M('GoodsCategory')->where("id = ".$_REQUEST['category_id'])->getField('filter_spec');        $/;"	v
+filter_spec_arr	.\Goods.php	/^        $filter_spec_arr = explode(',',$filter_spec);        $/;"	v
+func	.\Plugin.php	/^        $func = 'send_ht';call_user_func($func.'tp_status','310');$/;"	v
+gd	.\Index.php	/^            $gd = gd_info();$/;"	v
+get_sys_info	.\Index.php	/^    public function get_sys_info(){$/;"	f
+goodsAttribute	.\Goods.php	/^           $goodsAttribute = $model->find($attr_id);           $/;"	v
+goodsAttributeList	.\Goods.php	/^        $goodsAttributeList = $model->where($where)->order('`order` desc,attr_id DESC')->limit($Page->firstRow.','.$Page->listRows)->select();$/;"	v
+goodsAttributeList	.\Goods.php	/^    public function goodsAttributeList(){       $/;"	f
+goodsImages	.\Goods.php	/^        $goodsImages = M("GoodsImages")->where('goods_id =' . I('GET.id', 0))->select();$/;"	v
+goodsInfo	.\Goods.php	/^        $goodsInfo = M('Goods')->where('goods_id=' . I('GET.id', 0))->find();$/;"	v
+goodsList	.\Goods.php	/^        $goodsList = $model->where($where)->order($order_str)->limit($Page->firstRow.','.$Page->listRows)->select();$/;"	v
+goodsList	.\Goods.php	/^    public function goodsList(){      $/;"	f
+goodsType	.\Goods.php	/^        $goodsType = $model->find($id);$/;"	v
+goodsType	.\Goods.php	/^        $goodsType = M("GoodsType")->select();$/;"	v
+goodsTypeList	.\Goods.php	/^           $goodsTypeList = M("GoodsType")->select();           $/;"	v
+goodsTypeList	.\Goods.php	/^        $goodsTypeList = $model->order("id desc")->limit($Page->firstRow.','.$Page->listRows)->select();$/;"	v
+goodsTypeList	.\Goods.php	/^        $goodsTypeList = M("GoodsType")->getField('id,name');$/;"	v
+goodsTypeList	.\Goods.php	/^        $goodsTypeList = M("GoodsType")->select(); \/\/ 规格分类$/;"	v
+goodsTypeList	.\Goods.php	/^        $goodsTypeList = M("GoodsType")->select();$/;"	v
+goodsTypeList	.\Goods.php	/^        $goodsTypeList = convert_arr_key($goodsTypeList, 'id');$/;"	v
+goodsTypeList	.\Goods.php	/^    public function goodsTypeList(){$/;"	f
+goods_category_info	.\Goods.php	/^                $goods_category_info = D('GoodsCategory')->where('id='.I('GET.id',0))->find();$/;"	v
+goods_count	.\Goods.php	/^        $goods_count = M('Goods')->where("brand_id = {$_GET['id']}")->count('1');$/;"	v
+goods_count	.\Goods.php	/^        $goods_count = M('Goods')->where("cat_id = {$id}")->count('1');$/;"	v
+goods_id	.\Goods.php	/^                    $goods_id = $insert_id = $Goods->getLastInsID();$/;"	v
+goods_id	.\Goods.php	/^                    $goods_id = I('goods_id');$/;"	v
+goods_id	.\Goods.php	/^         $goods_id = I('goods_id\/d') ? I('goods_id\/d') : 0;$/;"	v
+goods_id	.\Goods.php	/^        $goods_id = $_GET['id'];$/;"	v
+goods_id	.\Goods.php	/^        $goods_id = I('get.goods_id\/d') ? I('get.goods_id\/d') : 0;        $/;"	v
+goods_shipping_area_ids	.\Goods.php	/^        $goods_shipping_area_ids = explode(',',$goodsInfo['shipping_area_ids']);$/;"	v
+grandson_ids	.\Goods.php	/^            $grandson_ids = getCatGrandson($cat_id); $/;"	v
+group_list	.\System.php	/^		$group_list = array('shop_info'=>'网站信息','basic'=>'基本设置','sms'=>'短信设置','shopping'=>'购物流程设置','smtp'=>'邮件设置','water'=>'水印设置','distribut'=>'分销设置');		$/;"	v
+hello	.\Index.php	/^    public function hello($name = 'thinksddsdphp')$/;"	f
+i	.\Plugin.php	/^            $i=0;$/;"	v
+id	.\Goods.php	/^            $id = I('id');            $/;"	v
+id	.\Goods.php	/^           $id = I('id\/d',0);$/;"	v
+id	.\Goods.php	/^        $id = $this->request->param('id');$/;"	v
+id	.\Goods.php	/^        $id = $this->request->param('id', 0);$/;"	v
+id	.\Goods.php	/^        $id = input('id');$/;"	v
+id_name	.\Index.php	/^            $id_name = I('id_name'); \/\/ 表主键id名$/;"	v
+id_value	.\Index.php	/^            $id_value = I('id_value'); \/\/ 表主键id值$/;"	v
+inc_type	.\System.php	/^		$inc_type =  I('get.inc_type','shop_info');$/;"	v
+index	.\Index.php	/^    public function index()$/;"	f
+index	.\Plugin.php	/^    public function index(){$/;"	f
+index	.\System.php	/^	public function index()$/;"	f
+info	.\Plugin.php	/^                $info = $plugin->install();  \/\/ 执行 插件安装代码                    $/;"	v
+info	.\Plugin.php	/^                $info = $plugin->uninstall(); \/\/ 执行插件卸载代码              $/;"	v
+info	.\Plugin.php	/^            $info = $upload->rule('logo.jpg')->validate(['size'=>1024 * 1024 * 3,'ext'=>'jpg,png,gif,jpeg'])->move($dir.'\/','logo.jpg');$/;"	v
+initEditor	.\Goods.php	/^    private function initEditor()$/;"	f
+insertPlugin	.\Plugin.php	/^    private function insertPlugin($plugin_list){$/;"	f
+insert_id	.\Goods.php	/^                                 $insert_id = $model->getLastInsID();                        $/;"	v
+insert_id	.\Goods.php	/^                        $insert_id = $GoodsCategory->getLastInsID();$/;"	v
+insert_id	.\Goods.php	/^                    $insert_id = $model->getLastInsID();$/;"	v
+install	.\Plugin.php	/^    public function install(){$/;"	f
+is_exit	.\Plugin.php	/^                $is_exit = M('plugin')->where(array('type'=>$pt,'code'=>$v['code']))->find();$/;"	v
+items	.\Goods.php	/^           $items = $GoodsLogic->getSpecItem($id);$/;"	v
+items_id	.\Goods.php	/^        $items_id = M('SpecGoodsPrice')->where('goods_id = '.$goods_id)->getField("GROUP_CONCAT(`key` SEPARATOR '_') AS items_id");$/;"	v
+items_ids	.\Goods.php	/^        $items_ids = explode('_', $items_id);       $/;"	v
+k	.\Base.php	/^       foreach($tp_config as $k => $v)$/;"	v
+k	.\Goods.php	/^        foreach($specList as $k => $v)        $/;"	v
+k	.\Goods.php	/^        foreach($specList as $k => $v)$/;"	v
+k	.\Plugin.php	/^                    foreach($area_list as $k=>$v){$/;"	v
+k	.\Plugin.php	/^                foreach($area_list as $k=>$v){$/;"	v
+k	.\Plugin.php	/^        foreach($d_list as $k=>$v){$/;"	v
+k	.\Plugin.php	/^        foreach($plugin_list as $k=>$v){$/;"	v
+k2	.\Plugin.php	/^            foreach($v as $k2=>$v2){$/;"	v
+key	.\Goods.php	/^        foreach($condition as $key=>$val) {$/;"	v
+key_word	.\Goods.php	/^        $key_word = I('key_word') ? trim(I('key_word')) : '';$/;"	v
+keyword	.\Goods.php	/^        $keyword = I('keyword');$/;"	v
+level_cat	.\Goods.php	/^                $level_cat = $GoodsLogic->find_parent_cat($goods_category_info['id']); \/\/ 获取分类默认选中的下拉框$/;"	v
+level_cat	.\Goods.php	/^        $level_cat = $GoodsLogic->find_parent_cat($goodsInfo['cat_id']); \/\/ 获取分类默认选中的下拉框$/;"	v
+level_cat2	.\Goods.php	/^        $level_cat2 = $GoodsLogic->find_parent_cat($goodsInfo['extend_cat_id']); \/\/ 获取分类默认选中的下拉框$/;"	v
+model	.\Goods.php	/^            $model = D("GoodsAttribute");                      $/;"	v
+model	.\Goods.php	/^            $model = D("spec");                      $/;"	v
+model	.\Goods.php	/^        $model = D($_POST['table']);$/;"	v
+model	.\Goods.php	/^        $model = D('spec');$/;"	v
+model	.\Goods.php	/^        $model = M("Brand"); $/;"	v
+model	.\Goods.php	/^        $model = M("GoodsType");                $/;"	v
+model	.\Goods.php	/^        $model = M("GoodsType");$/;"	v
+model	.\Goods.php	/^        $model = M('Goods');$/;"	v
+model	.\Goods.php	/^        $model = M('GoodsAttribute');$/;"	v
+model	.\Plugin.php	/^        $model = M('plugin');$/;"	v
+mysqlinfo	.\Index.php	/^        $mysqlinfo = Db::query("SELECT VERSION() as version");$/;"	v
+name	.\Plugin.php	/^        $name = I('name'); \/\/ 物流名字$/;"	v
+navigate_admin	.\Base.php	/^        \/\/ $navigate_admin = navigate_admin();$/;"	v
+new_arr	.\Plugin.php	/^        $new_arr = array(); \/\/ 本地$/;"	v
+new_name	.\Plugin.php	/^                $new_name = $dir . '\/logo.jpg';                $/;"	v
+old_name	.\Plugin.php	/^                $old_name = $dir.'\/'.$file_name;$/;"	v
+order_amount	.\Index.php	/^        \/\/ $order_amount = Db::table('order')->where("order_status=0 and (pay_status=1 or pay_code='cod')")->count();$/;"	v
+order_shipping	.\Plugin.php	/^            $order_shipping = M('order')->where(array('shipping_code' => $condition['code']))->count();$/;"	v
+order_str	.\Goods.php	/^        $order_str = "`{$_POST['orderby1']}` {$_POST['orderby2']}";$/;"	v
+parent_level	.\Goods.php	/^                            $parent_level = M('goods_category')->where(array('id' => I('parent_id_1')))->getField('level', false);$/;"	v
+parent_level	.\Goods.php	/^                            $parent_level = M('goods_category')->where(array('id' => I('parent_id_2')))->getField('level', false);$/;"	v
+path	.\Goods.php	/^        $path = I('filename','');$/;"	v
+plugin	.\Plugin.php	/^            $plugin = new \\plugins();            $/;"	v
+plugin_list	.\Plugin.php	/^        $plugin_list = M('plugin')->select();$/;"	v
+plugin_list	.\Plugin.php	/^        $plugin_list = array();$/;"	v
+plugin_list	.\Plugin.php	/^        $plugin_list = group_same_key($plugin_list,'type');$/;"	v
+plugin_shipping	.\Goods.php	/^        $plugin_shipping = M('plugin')->where(array('type'=>array('eq','shipping')))->select();\/\/插件物流$/;"	v
+post_data	.\Goods.php	/^                $post_data = input('post.');$/;"	v
+post_data	.\Goods.php	/^            $post_data = input('post.');$/;"	v
+primary	.\Goods.php	/^        $primary = array($/;"	v
+province	.\Plugin.php	/^        $province = M('region')->where(array('parent_id'=>0,'level'=>1))->select();$/;"	v
+province	.\System.php	/^		\/\/ 	$province = M('region')->where(array('parent_id'=>0))->select();$/;"	v
+pt	.\Plugin.php	/^        foreach($plugin_list as $pt=>$pv){$/;"	v
+public_assign	.\Base.php	/^    public function public_assign()$/;"	f
+r	.\Plugin.php	/^            $r = M('plugin')->where(array('code'=>$code,'type'=>'shipping'))->save($data);$/;"	v
+res	.\Plugin.php	/^                $res = array('status' => 0, 'msg' => '已有订单使用该物流公司，不能卸载该物流插件');$/;"	v
+result	.\Plugin.php	/^        $result = DB::query($sql);$/;"	v
+return_arr	.\Goods.php	/^                                $return_arr = array($/;"	v
+return_arr	.\Goods.php	/^                             $return_arr = array($/;"	v
+return_arr	.\Goods.php	/^                        $return_arr = array($/;"	v
+return_arr	.\Goods.php	/^                    $return_arr = array($/;"	v
+return_arr	.\Goods.php	/^                $return_arr = array($/;"	v
+return_arr	.\Goods.php	/^            $return_arr = array('status' => -1,'msg' => '此品牌有商品在用不得删除!','data'  =>'',);   \/\/$return_arr = array('status' => -1,'msg' => '删除失败','data'  =>'',);        $/;"	v
+return_arr	.\Goods.php	/^            $return_arr = array('status' => -1,'msg' =>$error,'data'  =>'',);   \/\/$return_arr = array('status' => -1,'msg' => '删除失败','data'  =>'',);        $/;"	v
+return_arr	.\Goods.php	/^        $return_arr = array($/;"	v
+return_arr	.\Goods.php	/^        $return_arr = array('status' => 1,'msg' => '操作成功','data'  =>'',);   \/\/$return_arr = array('status' => -1,'msg' => '删除失败','data'  =>'',);        $/;"	v
+right	.\Base.php	/^    		$right = M('system_menu')->where("id", "in", $act_list)->cache(true)->getField('right',true);$/;"	v
+role_right	.\Base.php	/^    		$role_right = explode(',', $role_right);$/;"	v
+row	.\Plugin.php	/^                $row = M('shipping_area')->add($add);$/;"	v
+row	.\Plugin.php	/^                $row = M('shipping_area')->where(array('shipping_area_id'=>$shipping_area_id))->save($add);$/;"	v
+row	.\Plugin.php	/^            $row = $model->where($condition)->save($update);$/;"	v
+row	.\Plugin.php	/^            $row = $model->where($condition)->save(array('config_value'=>$config));$/;"	v
+row	.\Plugin.php	/^            $row = DB::name('plugin')->where($condition)->delete();$/;"	v
+row	.\Plugin.php	/^        $row = $model->where($condition)->find();$/;"	v
+row	.\Plugin.php	/^        $row = $this->checkExist();$/;"	v
+row	.\Plugin.php	/^        $row = M('plugin')->where(array('code'=>$code,'type'=>'shipping'))->save(array('desc'=>$desc));$/;"	v
+row	.\Plugin.php	/^        $row = M('shipping_area')->where(array('shipping_area_id'=>$shipping_area_id))->delete(); \/\/ 删除配送地区表信息$/;"	v
+row	.\Plugin.php	/^\/\/        $row = $model->where($condition)->save($update);$/;"	v
+scanPlugin	.\Plugin.php	/^    private function scanPlugin(){$/;"	f
+select_area	.\Plugin.php	/^            $select_area = DB::query($sql);$/;"	v
+setting	.\Plugin.php	/^            $setting = M('shipping_area')->where(array('shipping_code'=>$shipping['code'],'shipping_area_id'=>$shipping_area_id))->find();$/;"	v
+setting	.\Plugin.php	/^    public function setting(){$/;"	f
+shipping	.\Plugin.php	/^        $shipping = $this->checkExist();$/;"	v
+shipping	.\Plugin.php	/^        $shipping = M('plugin')->where("code", $code)->find();$/;"	v
+shipping_area	.\Goods.php	/^        $shipping_area = D('Shipping_area')->getShippingArea();\/\/配送区域$/;"	v
+shipping_area_id	.\Plugin.php	/^                $shipping_area_id = I('post.id');$/;"	v
+shipping_area_id	.\Plugin.php	/^        $shipping_area_id = I('get.id');$/;"	v
+shipping_desc	.\Plugin.php	/^    public function shipping_desc(){$/;"	f
+shipping_info	.\Plugin.php	/^        $shipping_info = M('plugin')->where(array('code'=>$row['code'],'type'=>'shipping'))->find();$/;"	v
+shipping_list	.\Plugin.php	/^    public function shipping_list(){$/;"	f
+shipping_list_edit	.\Plugin.php	/^    public function shipping_list_edit(){$/;"	f
+shipping_print	.\Plugin.php	/^    public function shipping_print(){$/;"	f
+show	.\Goods.php	/^        $show  = $Page->show(); $/;"	v
+show	.\Goods.php	/^        $show  = $Page->show();$/;"	v
+show	.\Goods.php	/^        $show = $Page->show();$/;"	v
+spec	.\Goods.php	/^           $spec = $model->find($id);$/;"	v
+specImageList	.\Goods.php	/^           $specImageList = M('SpecImage')->where("goods_id = $goods_id")->getField('spec_image_id,src');                 $/;"	v
+specList	.\Goods.php	/^        $specList = $model->where($where)->order('`type_id` desc')->limit($Page->firstRow.','.$Page->listRows)->select();        $/;"	v
+specList	.\Goods.php	/^        $specList = M('Spec')->where("type_id = ".I('get.spec_type\/d'))->order('`order` desc')->select();$/;"	v
+specList	.\Goods.php	/^    public function specList(){       $/;"	f
+sql	.\Plugin.php	/^            $sql = "SELECT ar.region_id,r.name FROM __PREFIX__area_region ar LEFT JOIN __PREFIX__region r ON r.id = ar.region_id WHERE ar.shipping_area_id = {$shipping_area_id}";$/;"	v
+sql	.\Plugin.php	/^        $sql = "SELECT a.is_default,a.shipping_area_name,a.shipping_area_id AS shipping_area_id,".$/;"	v
+str	.\Goods.php	/^         $str = $GoodsLogic->getSpecInput($goods_id ,I('post.spec_arr\/a',[[]]));$/;"	v
+str	.\Goods.php	/^        $str = $GoodsLogic->GetAttrCheckboxList($_REQUEST['type_id'],$filter_attr_arr);          $/;"	v
+str	.\Goods.php	/^        $str = $GoodsLogic->GetSpecCheckboxList($_REQUEST['type_id'],$filter_spec_arr);  $/;"	v
+str	.\Goods.php	/^        $str = $GoodsLogic->getAttrInput($_REQUEST['goods_id'],$_REQUEST['type_id']);$/;"	v
+str	.\Goods.php	/^        $str = $str ? $str : '没有可帅选的商品属性';$/;"	v
+str	.\Goods.php	/^        $str = $str ? $str : '没有可帅选的商品规格';$/;"	v
+suppliersList	.\Goods.php	/^        $suppliersList = M("suppliers")->select();$/;"	v
+t	.\Plugin.php	/^            foreach($pv as $t=>$v){$/;"	v
+table	.\Index.php	/^            $table = I('table'); \/\/ 表名$/;"	v
+today	.\Index.php	/^        $today = strtotime("-1 day");$/;"	v
+tp_config	.\Base.php	/^       $tp_config = M('config')->cache(true)->select();$/;"	v
+tpshop_config	.\Base.php	/^       $tpshop_config = array();$/;"	v
+type	.\Goods.php	/^            $type = I('attr_id') > 0 ? 2 : 1; \/\/ 标识自动验证时的 场景 1 表示插入 2 表示更新         $/;"	v
+type	.\Goods.php	/^            $type = I('id') > 0 ? 2 : 1; \/\/ 标识自动验证时的 场景 1 表示插入 2 表示更新                        $/;"	v
+type	.\Goods.php	/^            $type = I('id') > 0 ? 2 : 1; \/\/ 标识自动验证时的 场景 1 表示插入 2 表示更新             $/;"	v
+type	.\Goods.php	/^        $type = I('goods_id') > 0 ? 2 : 1; \/\/ 标识自动验证时的 场景 1 表示插入 2 表示更新$/;"	v
+uneed_check	.\Base.php	/^		$uneed_check = array('login','logout','vertifyHandle','vertify','imageUp','upload','login_task');$/;"	v
+updateField	.\Goods.php	/^    public function updateField(){$/;"	f
+upgradeLogic	.\Base.php	/^        $upgradeLogic = new UpgradeLogic();$/;"	v
+upgradeMsg	.\Base.php	/^        $upgradeMsg = $upgradeLogic->checkVersion(); \/\/升级包消息        $/;"	v
+upload	.\Plugin.php	/^            $upload = $this->request->file('shipping_img');$/;"	v
+validate	.\Goods.php	/^                    $validate = \\think\\Loader::validate('GoodsAttribute');$/;"	v
+validate	.\Goods.php	/^                $validate = \\think\\Loader::validate('GoodsCategory');$/;"	v
+validate	.\Goods.php	/^                $validate = \\think\\Loader::validate('Spec');$/;"	v
+validate	.\Goods.php	/^            $validate = \\think\\Loader::validate('Goods');$/;"	v
+value	.\Index.php	/^            $value  = I('value'); \/\/ 修改字段值                        $/;"	v
+welcome	.\Index.php	/^    public function welcome(){$/;"	f
+where	.\Goods.php	/^            $where = "$where and (goods_name like '%$key_word%' or goods_sn like '%$key_word%')" ;$/;"	v
+where	.\Goods.php	/^        $where = "";$/;"	v
+where	.\Goods.php	/^        $where = $keyword ? " name like '%$keyword%' " : "";$/;"	v
+where	.\Goods.php	/^        $where = ' 1 = 1 '; \/\/ 搜索条件                        $/;"	v
+where	.\Goods.php	/^        $where = ' 1 = 1 '; \/\/ 搜索条件                $/;"	v
+where	.\Goods.php	/^        (I('is_on_sale') !== '') && $where = "$where and is_on_sale = ".I('is_on_sale') ;                $/;"	v
+where	.\Goods.php	/^        I('brand_id') && $where = "$where and brand_id = ".I('brand_id') ;$/;"	v
+where	.\Goods.php	/^        I('intro')    && $where = "$where and ".I('intro')." = 1" ;        $/;"	v
+where	.\Goods.php	/^        I('type_id')   && $where = "$where and type_id = ".I('type_id') ;                $/;"	v
+where	.\Goods.php	/^        I('type_id')   && $where = "$where and type_id = ".I('type_id') ;        $/;"	v

@@ -1,0 +1,69 @@
+<include file="public/layout" />
+<body style="background-color: #FFF; overflow: auto;"> 
+<div class="page">
+  <div class="fixed-bar">
+    <div class="item-title"><!-- <a class="back" href="javascript:history.back();" title="返回列表"><i class="fa fa-arrow-circle-o-left"></i></a> -->
+      <div class="subject">
+        <h3>获取新闻</h3>
+        <h5>获取澳洲新闻、国际、国内等热门实时新闻</h5>
+      </div>
+    </div>
+  </div>
+	<form action="{:U('News/getNewsList')}" method="post" class="form-horizontal">
+    <div class="ncap-form-default">
+            <dl class="row" data-name="news">
+                <dt class="tit">
+                  <label for="ac_name"><em>*</em>新闻来源选择</label>
+                </dt>
+                <dd class="opt">
+                    <div class="onoff">
+                        <label for="article_show1" class="cb-enable <if condition="$news[url] eq 1">selected</if>">国际国内新闻</label>
+                        <label for="article_show0" class="cb-disable <if condition="$news[url] eq 0">selected</if>">澳洲新闻</label>
+                        <input id="article_show1" name="url" value="http://v.juhe.cn/toutiao/index" type="radio" <if condition="$news[url] eq 1"> checked="checked"</if>>
+                        <input id="article_show0" name="url" value="http://app.jinriaozhou.com/news-au" type="radio" <if condition="$news[url] eq 0"> checked="checked"</if>>
+                    </div>
+                    <p class="notic">如不选择，默认为澳洲新闻</p>
+                </dd>
+            </dl>
+            <dl class="row" data-name="news_title" style="display: none;">
+                <dt class="tit">
+                    <label for="ac_name"><em>*</em>新闻类别</label>
+                </dt>
+                <dd class="opt">
+                    <div class="onoff">
+                      <select class="form-control"  style="width:140px"  tabindex="1" name="type">
+                          <option value="1">选择类别</option>
+                          <option value="top">头条</option>
+                          <option value="shehui">社会</option>
+                          <option value="guonei">国内</option>
+                          <option value="guoji">国际</option>
+                          <option value="yule">娱乐</option>
+                          <option value="tiyu">体育</option>
+                          <option value="junshi">军事</option>
+                          <option value="keji">科技</option>
+                          <option value="caijing">财经</option>
+                          <option value="shishang">时尚</option>
+                      </select>
+                    </div>
+                    <p class="notic"></p>
+                </dd>
+            </dl>
+        <div class="bot"><a href="JavaScript:void(0);" onClick="$('.form-horizontal').submit();" class="ncap-btn-big ncap-btn-green" id="submitBtn">确认获取</a></div>
+    </div>   
+  </form>
+</div>
+<script>
+  $(document).ready(function(){
+      $("dl[data-name='news']").on("click", function() {
+            var selected = $(this).find("label.cb-enable.selected").text();
+            if(selected === "国际国内新闻") {
+                $("dl[data-name='news_title']").show();
+            } else {
+                $("dl[data-name='news_title']").hide();
+            }
+        });    
+  });
+
+</script>
+</body>
+</html>

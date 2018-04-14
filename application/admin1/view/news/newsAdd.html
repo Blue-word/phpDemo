@@ -1,0 +1,215 @@
+<include file="public/layout" />
+<!-- 配置文件 -->
+<script type="text/javascript" src="__PUBLIC__/static/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="__PUBLIC__/static/ueditor/ueditor.all.js"></script>
+
+<body style="background-color: #FFF; overflow: auto;">
+<div class="page">
+    <div class="fixed-bar">
+        <div class="item-title"><a class="back" href="javascript:history.back();" title="返回列表"><i class="fa fa-arrow-circle-o-left"></i></a>
+          <div class="subject">
+                <h3>发布新闻</h3>
+                <h5>APP新闻浏览</h5>
+          </div>
+            <ul class="tab-base nc-row">
+                <li><a href="javascript:void(0);" data-index='1' class="tab current"><span>新闻主体</span></a></li>
+                <li><a href="javascript:void(0);" data-index='2' class="tab"><span>新闻相册</span></a></li><!-- 
+                <li><a href="javascript:void(0);" data-index='3' class="tab"><span>新闻模型</span></a></li>
+                <li><a href="javascript:void(0);" data-index='4' class="tab"><span>新闻类型</span></a></li>  -->               
+            </ul>
+        </div>
+    </div>
+    <!-- 操作说明 -->
+    <div class="explanation" id="explanation">
+        <div class="title" id="checkZoom"><i class="fa fa-lightbulb-o"></i>
+            <h4 title="提示相关设置操作时应注意的要点">操作提示</h4>
+            <span id="explanationZoom" title="收起提示"></span> </div>
+        <ul>
+            <li>若是转载文章请务必声明</li>
+        </ul>
+    </div>
+    <form class="form-horizontal" action="{:U('News/newsHandle')}" id="add_post" method="post">
+    <!--通用信息-->
+        <div class="ncap-form-default tab_div_1">
+            <dl class="row">
+                <dt class="tit">
+                    <label for="record_no">新闻标题</label>
+                </dt>
+                <dd class="opt">
+                    <input type="text" value="{$news.title}" name="title" class="input-txt"/>
+                    <span class="err" id="err_goods_name" style="color:#F00; display:none;"></span>
+                </dd>
+            </dl>
+            <dl class="row">
+                <dt class="tit">
+                    <label for="statement">搜索词所属类别</label>
+                </dt>
+                <dd class="opt">
+                    <input type="radio" name="statement" value="0"  <if condition="$news[statement] eq 0"> checked </if> > 原 创  &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="statement" value="1" <if condition="$news[statement] eq 1"> checked </if> > 转 载
+                </dd>
+            </dl>
+            <dl class="row">
+                <dt class="tit">
+                    <label for="record_no">新闻类别</label>
+                </dt>
+                <dd class="opt">
+                    <select class="small form-control"  style="width:200px"  tabindex="1" name="cate">
+                        <option value="">所属类别选择</option>
+                        {$cat_select}                              
+                    </select>
+                </dd>
+            </dl>
+            <dl class="row" data-name="news">
+                <dt class="tit">
+                  <label>专题新闻</label>
+                </dt>
+                <dd class="opt">
+                    <div class="onoff">
+                        <label for="article_show1" class="cb-enable <if condition="$news[is_topic] eq 1">selected</if>">是</label>
+                        <label for="article_show0" class="cb-disable <if condition="$news[is_topic] eq 0">selected</if>">否</label>
+                        <input id="article_show1" name="is_topic" value="1" type="radio" <if condition="$news[is_topic] eq 1"> checked="checked"</if>>
+                        <input id="article_show0" name="is_topic" value="0" type="radio" <if condition="$news[is_topic] eq 0"> checked="checked"</if>>
+                    </div>
+                    <p class="notic"></p>
+                </dd>
+            </dl>
+            <dl class="row" data-name="news_title" style="display: none;">
+                <dt class="tit">
+                    <label for="record_no">专题新闻标题</label>
+                </dt>
+                <dd class="opt">
+                    <select class="small form-control"  style="width:200px"  tabindex="1" name="topic_id">
+                        <option value="0">所属专题选择</option>
+                        <volist name="news_topic" id="vo">
+                          <option value="{$vo.topic_id}" <if condition="$news.topic_id eq $vo.topic_id">selected</if>>{$vo.title}</option>
+                        </volist>                               
+                    </select>
+                </dd>
+            </dl>
+            <if condition="$news.url neq null">
+            <dl class="row">
+                <dt class="tit">
+                    <label for="record_no">新闻链接</label>
+                </dt>
+                <dd class="opt">
+                    <input type="hidden" name="url" value="{$news.url}">
+                    <a href="{$news.url}" class="ncap-btn-big ncap-btn-blue" target="_blank">{$news.url}</a>
+                    <!-- <input type="text" value="{$news.url}" name="url" class="input-txt"/> -->
+                </dd>
+            </dl>
+            <dl class="row">
+                <dt class="tit">
+                    <label for="record_no">新闻展示效果</label>
+                </dt>
+                <dd class="opt">
+                    <input type="hidden" name="url" value="{$news.url}">
+                    <a href="http://localhost/jraz/index.php/admin/news/test/id/{$id}" class="ncap-btn-big ncap-btn-blue" target="_blank">点击此处进入效果查看界面</a>
+                    <p class="notic">将屏幕缩小查看效果，屏幕最小尺寸问</p>
+                </dd>
+            </dl>
+            </if>
+            <dl class="row">
+                <dt class="tit">
+                    <label for="record_no">新闻详情描述</label>
+                </dt>
+                <dd class="opt">
+                    <script id="container" name="content" type="text/plain"></script>
+                    <!-- <textarea id="container" name="content" type="text/plain">{$news.content}</textarea> -->                
+                </dd>
+            </dl>                
+        </div>
+        <div class="ncap-form-default">
+            <if condition='$act neq detail'>
+                <div class="bot">
+                    <h1>审核：</h1>　　　
+                      <input type="radio" name="status" value="1"  <if condition="$news[status] eq 1"> checked </if> > 通 过  　
+                      <input type="radio" name="status" value="-1" <if condition="$news[status] eq -1"> checked </if> > 不 通 过
+                </div>        
+                <div class="bot">    
+                	<input type="hidden" name="act" value="{$act}">
+            		<input type="hidden" name="id" value="{$news.id}">
+                    <div class="bot"><a href="JavaScript:void(0);" onClick="checkForm()" class="ncap-btn-big ncap-btn-green" id="submitBtn">审核提交</a>
+        			</div>
+                </div>
+            </if>
+        </div>
+    </form>
+</div>
+<div style="display: none;" id="news_content">
+    {$news.content}
+</div>
+<!-- 配置文件 -->
+<script type="text/javascript" src="__PUBLIC__/static/ueditor/ueditor.parse.js"></script>
+<script type="text/javascript" src="__PUBLIC__/static/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="__PUBLIC__/static/ueditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+    uParse('.content', {
+        rootPath: '../'
+    });
+    ue.ready(function() {
+        var html = $('#news_content').html();
+        console.log(html);
+        ue.setContent(html);
+    });
+    // ue.ready(function(){
+    //     ue.setContent("1sss");    
+    // });
+</script>
+<script>
+    $(document).ready(function(){
+        //插件切换列表
+        $('.tab-base').find('.tab').click(function(){
+            $('.tab-base').find('.tab').each(function(){
+                $(this).removeClass('current');
+            });
+            $(this).addClass('current');
+            var tab_index = $(this).data('index');          
+            $(".tab_div_1, .tab_div_2, .tab_div_3, .tab_div_4").hide();         
+            $(".tab_div_"+tab_index).show();
+        });
+
+        //
+        $("dl[data-name='news']").on("click", function() {
+            var selected = $(this).find("label.cb-enable.selected").text();
+            if(selected === "是") {
+                $("dl[data-name='news_title']").show();
+            } else {
+                $("dl[data-name='news_title']").hide();
+            }
+        });    
+    });
+    function checkForm(){
+		if($('input[name="title"]').val() == ''){
+			alert("请填写新闻标题！");
+			return false;
+		}
+		if($('input[name="original_statement"]').val() == ''){
+			alert("请填写原创声明！");
+			return false;
+		}
+		if($('input[name="reproduit_statement"]').val() == ''){
+			alert("请填写转载声明！");
+			return false;
+		}
+		if($('#is_topic').val() == ''){
+			alert("请选择专题类别！");
+			return false;
+		}
+		// if($('#container').val() == ''){
+		// 	alert("请填写文章内容！");
+		// 	return false;
+		// }
+		$('#add_post').submit();
+	}
+
+    
+</script>
+</body>
+
+</html>
